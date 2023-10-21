@@ -1,0 +1,20 @@
+/*
+    ==== COLORS ====
+
+    Description:
+        Colors used accross the project.
+    
+    Modificators:
+        No modificators.
+        
+*/
+
+@use "variables" as vars;
+
+.text-color-white {
+    color: vars.$white;
+}
+
+.text-color-black {
+    color: vars.$pure-black;
+}

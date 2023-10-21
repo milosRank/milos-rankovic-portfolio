@@ -1,0 +1,6 @@
+# Ignore Node modules
+node_modules
+package-lock.json
+
+# Ignore generated CSS files
+css/bootstrap.css
