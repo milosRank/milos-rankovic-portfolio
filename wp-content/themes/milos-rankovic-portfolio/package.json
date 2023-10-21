@@ -4,7 +4,7 @@
   "description": "Milos Rankovic Protfolio Website",
   "repository": {
     "type": "git",
-    "url": "https://github.com/milosRank/milos-rankovic-portfolio.git"
+    "url": "git+https://github.com/milosRank/milos-rankovic-portfolio.git"
   },
   "main": "index.js",
   "scripts": {
@@ -14,7 +14,7 @@
     "build-sections": "sass assets/scss/sections/_all-sections.scss --style=expanded --quiet | postcss --use autoprefixer --no-map > assets/css/build/all-sections.css",
     "build-main": "sass assets/scss/main.scss --style=expanded --quiet | postcss --use autoprefixer --no-map > assets/css/build/main.css",
     "build-all": "npm-run-all build-global build-partials build-bootstrap build-sections build-main"
-},
+  },
   "author": "Milos Rankovic",
   "license": "ISC",
   "dependencies": {

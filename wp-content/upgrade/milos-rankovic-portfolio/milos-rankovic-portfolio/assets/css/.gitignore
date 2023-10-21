@@ -1,6 +1,0 @@
-*
-!build*
-!build/**/
-!system-msg.css
-!.gitignore
-!.gitkeep
