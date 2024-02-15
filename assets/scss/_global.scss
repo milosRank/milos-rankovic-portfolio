@@ -29,9 +29,9 @@ html.screen-locked {
 body {
     margin: 0;
     padding: 0;
-    // font-family: vars.$font-primary-regular;
+    font-family: vars.$font-primary-regular;
     font-size: vars.$fs-small;
-    // color: vars.$brand-primary-color;
+    color: vars.$text-primary-color;
     padding-top: var(--headerHeight);
 }
 
@@ -39,53 +39,56 @@ body {
 
 // ==== Text elements ====
 
-// h1 {
-//     @include vars.font(vars.$font-secondary-regular, normal, vars.$fs-extra-large, vars.$fs-extra-large);
-//     margin-top: 70px;
-//     margin-bottom: 40px;
-// }
+h1 {
+    @include vars.font(vars.$font-primary-bold, normal, vars.$fs-extra-large, calc(vars.$fs-extra-large + 1rem));
+    margin-top: 70px;
+    margin-bottom: 40px;
+}
 
-// h2 {
-//     @include vars.font(vars.$font-secondary-regular, normal, vars.$fs-medium-large, vars.$fs-medium-large);
-//     margin-top: 70px;
-//     margin-bottom: 35px;
-// }
+h2 {
+    @include vars.font(vars.$font-primary-bold, normal, vars.$fs-medium-large, calc(vars.$fs-medium-large + 1rem));
+    margin-top: 70px;
+    margin-bottom: 35px;
+}
 
-// h3 {
-//     @include vars.font(vars.$font-secondary-regular, normal, vars.$fs-large, vars.$fs-large);
-//     margin-top: 65px;
-//     margin-bottom: 30px;
-// }
+h3 {
+    @include vars.font(vars.$font-primary-bold, normal, vars.$fs-large, calc(vars.$fs-large + 1rem));
+    margin-top: 65px;
+    margin-bottom: 30px;
+}
 
-// h4 {
-//     @include vars.font(vars.$font-secondary-regular, normal, 2.5rem, 2.5rem);
-//     margin-top: 60px;
-//     margin-bottom: 25px;
-// }
+h4 {
+    @include vars.font(vars.$font-primary-bold, normal, vars.$fs-medium, calc(vars.$fs-medium + 1rem));
+    margin-top: 60px;
+    margin-bottom: 25px;
+}
 
-// h5 {
-//     @include vars.font(vars.$font-secondary-regular, normal, 2.2rem, 2.2rem);
-//     margin-top: 40px;
-//     margin-bottom: 20px;
-// }
+h5 {
+    @include vars.font(vars.$font-primary-bold, normal, vars.$fs-medium-small, calc(vars.$fs-medium-small + 1rem));
+    margin-top: 40px;
+    margin-bottom: 20px;
+}
 
-// h6 {
-//     @include vars.font(vars.$font-secondary-regular, normal, vars.$fs-medium-small, vars.$fs-medium-small);
-//     margin-top: 30px;
-//     margin-bottom: 20px;
-// }
+h6 {
+    @include vars.font(vars.$font-primary-bold, normal, vars.$fs-small, calc(vars.$fs-small + 1rem));
+    margin-top: 30px;
+    margin-bottom: 20px;
+}
 
-// a {
+a {
+    color: vars.$text-secondary-color;
+    font-size: vars.$fs-small;
+    line-height: 3.2rem;
+}
 
-// }
+p {
+    font-size: vars.$fs-small;
+    line-height: 3.2rem;
+}
 
-// p {
-
-// }
-
-// strong {
-
-// }
+strong {
+    font-family: vars.$font-primary-semi-bold;
+}
 
 
 
@@ -152,42 +155,6 @@ section {
 }
 
 
-
-// ==== Transforms ====
-
-.rotate {
-    transform: rotate(180deg) !important;
-}
-
-
-
-// ==== Display ====
-
-.display-block {
-    display: block !important;
-}
-
-.display-inline-block {
-    display: inline-block !important;
-}
-
-.display-inline {
-    display: inline !important;
-}
-
-.display-flex {
-    display: flex !important;
-}
-
-.display-grid {
-    display: grid !important;
-}
-
-.display-none {
-    display: none !important;
-}
-
-
 // ==== IOS specifics ====
 
 .screen-locked.ios-device {
@@ -196,22 +163,7 @@ section {
     // user-scalable: no;
     -ms-text-size-adjust: 100%;
     -webkit-text-size-adjust: 100%;
-
-    .popup-wrapper {
-        opacity: 0.8;
-    }
 }
-
-
-
-// ==== Container ====
-
-// @media(min-width: 1400px) {
-
-//     .container {
-//         max-width: 1200px;
-//     }
-// }
 
 
 
