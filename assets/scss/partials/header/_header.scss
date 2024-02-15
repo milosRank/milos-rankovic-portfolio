@@ -1,0 +1,16 @@
+/*
+    ==== HEADER ====
+
+    Description: 
+        This is header of website. Also, this file contains style for main site menu.
+    
+    Modificators:
+        No modificators.
+*/
+
+@use "../.././variables" as vars;
+@import "navigation-menu"; // Import navigation menu styles
+
+header {
+    color: red;
+}

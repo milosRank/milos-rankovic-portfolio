@@ -1,0 +1,239 @@
+/*
+    ==== GLOBALS ====
+
+    Description:
+        Global styles.
+    
+    Modificators:
+        No modificators.
+        
+*/
+
+@use "variables" as vars;
+
+:root {
+    font-size: 62.5%; // We are changing the value of rem to 1rem = 10px instead of default 1rem = 16px because of the easier calculations
+}
+
+*,
+*::after,
+*::before {
+    box-sizing: border-box;
+    -webkit-tap-highlight-color: transparent;
+}
+
+html.screen-locked {
+    overflow-y: hidden;
+}
+
+body {
+    margin: 0;
+    padding: 0;
+    font-family: vars.$font-primary-regular;
+    font-size: vars.$fs-small;
+    color: vars.$text-primary-color;
+    padding-top: var(--headerHeight);
+}
+
+
+
+// ==== Text elements ====
+
+h1 {
+    @include vars.font(vars.$font-primary-bold, normal, vars.$fs-extra-large, calc(vars.$fs-extra-large + 1rem));
+    margin-top: 70px;
+    margin-bottom: 40px;
+}
+
+h2 {
+    @include vars.font(vars.$font-primary-bold, normal, vars.$fs-medium-large, calc(vars.$fs-medium-large + 1rem));
+    margin-top: 70px;
+    margin-bottom: 35px;
+}
+
+h3 {
+    @include vars.font(vars.$font-primary-bold, normal, vars.$fs-large, calc(vars.$fs-large + 1rem));
+    margin-top: 65px;
+    margin-bottom: 30px;
+}
+
+h4 {
+    @include vars.font(vars.$font-primary-bold, normal, vars.$fs-medium, calc(vars.$fs-medium + 1rem));
+    margin-top: 60px;
+    margin-bottom: 25px;
+}
+
+h5 {
+    @include vars.font(vars.$font-primary-bold, normal, vars.$fs-medium-small, calc(vars.$fs-medium-small + 1rem));
+    margin-top: 40px;
+    margin-bottom: 20px;
+}
+
+h6 {
+    @include vars.font(vars.$font-primary-bold, normal, vars.$fs-small, calc(vars.$fs-small + 1rem));
+    margin-top: 30px;
+    margin-bottom: 20px;
+}
+
+a {
+    color: vars.$text-secondary-color;
+    font-size: vars.$fs-small;
+    line-height: 3.2rem;
+}
+
+p {
+    font-size: vars.$fs-small;
+    line-height: 3.2rem;
+}
+
+strong {
+    font-family: vars.$font-primary-semi-bold;
+}
+
+
+
+// ==== Block elements ====
+
+img {
+    max-width: 100%;
+    width: auto;
+    height: auto;
+}
+
+section {
+    position: relative;
+
+    .container-fluid {
+        z-index: 1;
+        position: relative;
+    }
+}
+
+
+
+// ==== Lists ====
+
+ul {
+    padding-left: 0;
+    list-style: none;
+    
+    li {
+        position: relative;
+        padding-left: 25px;
+
+        &:not(:last-child) {
+            margin-bottom: 7px;
+        }
+
+        &::before {
+            @include vars.pseudo("", 13px, 16px, absolute);
+            top: 5px;
+            left: 0;
+            background-image: url("../../img/icons/arrows/icon--arrow-blue.svg");
+            background-repeat: no-repeat;
+            background-size: contain;
+        }
+    }
+}
+
+ol {
+
+    li {
+
+        &::marker {
+            color: vars.$text-secondary-color;
+        }
+    }
+}
+
+
+// ==== Text aligment ====
+
+.text-center {
+    text-align: center !important;
+}
+
+.text-left {
+    text-align: left !important;
+}
+
+.text-right {
+    text-align: right !important;
+}
+
+
+
+// ==== Positioning ====
+
+.relative {
+    position: relative !important;
+}
+
+.absolute {
+    position: absolute !important;
+}
+
+
+// ==== IOS specifics ====
+
+.screen-locked.ios-device {
+    position: fixed;
+    touch-action: manipulation;
+    // user-scalable: no;
+    -ms-text-size-adjust: 100%;
+    -webkit-text-size-adjust: 100%;
+}
+
+
+
+// ==== Device specifics ====
+
+// IOS
+.screen-locked.ios-device {
+    position: fixed;
+}
+
+
+
+// ==== Various ====
+
+// RESPONSIVE
+
+@media(max-width: 575px) {
+
+    // h1 {
+    //     @include vars.font(vars.$font-secondary-regular, normal, vars.$fs-medium-large, vars.$fs-medium-large);
+    //     margin-top: 65px;
+    //     margin-bottom: 30px;
+    // }
+
+    // h2 {
+    //     @include vars.font(vars.$font-secondary-regular, normal, 3.8rem, 3.8rem);
+    //     margin-top: 65px;
+    //     margin-bottom: 30px;
+    // }
+
+    // h3 {
+    //     @include vars.font(vars.$font-secondary-regular, normal, vars.$fs-large, vars.$fs-large);
+    //     margin-top: 65px;
+    //     margin-bottom: 30px;
+    // }
+
+    // h4 {
+    //     @include vars.font(vars.$font-secondary-regular, normal, 2.5rem, 2.5rem);
+    //     margin-top: 60px;
+    //     margin-bottom: 25px;
+    // }
+
+    // h5 {
+    //     @include vars.font(vars.$font-secondary-regular, normal, 2.2rem, 2.2rem);
+    //     margin-top: 40px;
+    //     margin-bottom: 20px;
+    // }
+
+    // h6 {
+    //     @include vars.font(vars.$font-secondary-regular, normal, vars.$fs-medium-small, vars.$fs-medium-small);
+    //     margin-top: 30px;
+    //     margin-bottom: 20px;
+    // }
+}
