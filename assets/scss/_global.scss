@@ -113,19 +113,38 @@ section {
 
 // ==== Lists ====
 
-// ul {
+ul {
+    padding-left: 0;
+    list-style: none;
     
-//     li {
+    li {
+        position: relative;
+        padding-left: 25px;
 
-//     }
-// }
+        &:not(:last-child) {
+            margin-bottom: 7px;
+        }
 
-// ol {
+        &::before {
+            @include vars.pseudo("", 13px, 16px, absolute);
+            top: 5px;
+            left: 0;
+            background-image: url("../../img/icons/arrows/icon--arrow-blue.svg");
+            background-repeat: no-repeat;
+            background-size: contain;
+        }
+    }
+}
 
-//     li {
+ol {
 
-//     }
-// }
+    li {
+
+        &::marker {
+            color: vars.$text-secondary-color;
+        }
+    }
+}
 
 
 // ==== Text aligment ====
