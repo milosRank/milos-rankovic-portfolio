@@ -1,0 +1,268 @@
+/*
+    ==== GLOBALS ====
+
+    Description:
+        Global styles.
+    
+    Modificators:
+        No modificators.
+        
+*/
+
+@use "variables" as vars;
+
+:root {
+    font-size: 62.5%; // We are changing the value of rem to 1rem = 10px instead of default 1rem = 16px because of the easier calculations
+}
+
+*,
+*::after,
+*::before {
+    box-sizing: border-box;
+    -webkit-tap-highlight-color: transparent;
+}
+
+html.screen-locked {
+    overflow-y: hidden;
+}
+
+body {
+    margin: 0;
+    padding: 0;
+    // font-family: vars.$font-primary-regular;
+    font-size: vars.$fs-small;
+    // color: vars.$brand-primary-color;
+    padding-top: var(--headerHeight);
+}
+
+
+
+// ==== Text elements ====
+
+// h1 {
+//     @include vars.font(vars.$font-secondary-regular, normal, vars.$fs-extra-large, vars.$fs-extra-large);
+//     margin-top: 70px;
+//     margin-bottom: 40px;
+// }
+
+// h2 {
+//     @include vars.font(vars.$font-secondary-regular, normal, vars.$fs-medium-large, vars.$fs-medium-large);
+//     margin-top: 70px;
+//     margin-bottom: 35px;
+// }
+
+// h3 {
+//     @include vars.font(vars.$font-secondary-regular, normal, vars.$fs-large, vars.$fs-large);
+//     margin-top: 65px;
+//     margin-bottom: 30px;
+// }
+
+// h4 {
+//     @include vars.font(vars.$font-secondary-regular, normal, 2.5rem, 2.5rem);
+//     margin-top: 60px;
+//     margin-bottom: 25px;
+// }
+
+// h5 {
+//     @include vars.font(vars.$font-secondary-regular, normal, 2.2rem, 2.2rem);
+//     margin-top: 40px;
+//     margin-bottom: 20px;
+// }
+
+// h6 {
+//     @include vars.font(vars.$font-secondary-regular, normal, vars.$fs-medium-small, vars.$fs-medium-small);
+//     margin-top: 30px;
+//     margin-bottom: 20px;
+// }
+
+// a {
+
+// }
+
+// p {
+
+// }
+
+// strong {
+
+// }
+
+
+
+// ==== Block elements ====
+
+img {
+    max-width: 100%;
+    width: auto;
+    height: auto;
+}
+
+section {
+    position: relative;
+
+    .container-fluid {
+        z-index: 1;
+        position: relative;
+    }
+}
+
+
+
+// ==== Lists ====
+
+// ul {
+    
+//     li {
+
+//     }
+// }
+
+// ol {
+
+//     li {
+
+//     }
+// }
+
+
+// ==== Text aligment ====
+
+.text-center {
+    text-align: center !important;
+}
+
+.text-left {
+    text-align: left !important;
+}
+
+.text-right {
+    text-align: right !important;
+}
+
+
+
+// ==== Positioning ====
+
+.relative {
+    position: relative !important;
+}
+
+.absolute {
+    position: absolute !important;
+}
+
+
+
+// ==== Transforms ====
+
+.rotate {
+    transform: rotate(180deg) !important;
+}
+
+
+
+// ==== Display ====
+
+.display-block {
+    display: block !important;
+}
+
+.display-inline-block {
+    display: inline-block !important;
+}
+
+.display-inline {
+    display: inline !important;
+}
+
+.display-flex {
+    display: flex !important;
+}
+
+.display-grid {
+    display: grid !important;
+}
+
+.display-none {
+    display: none !important;
+}
+
+
+// ==== IOS specifics ====
+
+.screen-locked.ios-device {
+    position: fixed;
+    touch-action: manipulation;
+    // user-scalable: no;
+    -ms-text-size-adjust: 100%;
+    -webkit-text-size-adjust: 100%;
+
+    .popup-wrapper {
+        opacity: 0.8;
+    }
+}
+
+
+
+// ==== Container ====
+
+// @media(min-width: 1400px) {
+
+//     .container {
+//         max-width: 1200px;
+//     }
+// }
+
+
+
+// ==== Device specifics ====
+
+// IOS
+.screen-locked.ios-device {
+    position: fixed;
+}
+
+
+
+// ==== Various ====
+
+// RESPONSIVE
+
+@media(max-width: 575px) {
+
+    // h1 {
+    //     @include vars.font(vars.$font-secondary-regular, normal, vars.$fs-medium-large, vars.$fs-medium-large);
+    //     margin-top: 65px;
+    //     margin-bottom: 30px;
+    // }
+
+    // h2 {
+    //     @include vars.font(vars.$font-secondary-regular, normal, 3.8rem, 3.8rem);
+    //     margin-top: 65px;
+    //     margin-bottom: 30px;
+    // }
+
+    // h3 {
+    //     @include vars.font(vars.$font-secondary-regular, normal, vars.$fs-large, vars.$fs-large);
+    //     margin-top: 65px;
+    //     margin-bottom: 30px;
+    // }
+
+    // h4 {
+    //     @include vars.font(vars.$font-secondary-regular, normal, 2.5rem, 2.5rem);
+    //     margin-top: 60px;
+    //     margin-bottom: 25px;
+    // }
+
+    // h5 {
+    //     @include vars.font(vars.$font-secondary-regular, normal, 2.2rem, 2.2rem);
+    //     margin-top: 40px;
+    //     margin-bottom: 20px;
+    // }
+
+    // h6 {
+    //     @include vars.font(vars.$font-secondary-regular, normal, vars.$fs-medium-small, vars.$fs-medium-small);
+    //     margin-top: 30px;
+    //     margin-bottom: 20px;
+    // }
+}

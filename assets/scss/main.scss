@@ -1,0 +1,70 @@
+/*
+    Project: Nanomed
+    Developed by: Eximius-Solutions
+
+    Table of content:
+    01. Colors
+    02. Background colors
+    03. Fonts
+    04. Globals
+    05. Partials
+    06. Components
+    07. Spacings
+    
+*/
+
+
+
+/* 
+	==== Colors ==== 
+*/
+
+@import "./colors/colors";
+
+
+
+/* 
+    ==== Backgrounds ==== 
+*/
+
+@import "./backgrounds/background-colors";
+
+
+
+/* 
+	==== Fonts ==== 
+*/
+
+@import "./fonts/fonts";
+
+
+
+/* 
+	==== Global ==== 
+*/
+
+@import "./global";
+
+
+
+/* 
+	==== Partials ==== 
+*/
+
+@import "./partials/partials";
+
+
+
+/* 
+	==== Components ==== 
+*/
+
+@import "./components/all-components";
+
+
+
+/* 
+	==== Spacings ==== 
+*/
+
+@import "./spacing/spacing";
