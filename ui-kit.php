@@ -205,7 +205,11 @@
                                 <span class="bubble"></span>
                             </span>
                         </a> <br> <br>
-                        <input placeholder="Enter text" type="text">
+                        
+                        <div class="input-wrapper">
+                            <input type="text" id="first-name">
+                            <label for="first-name">First Name *</label>
+                        </div>
                         <textarea placeholder="Enter message"></textarea>
                         
                     </div>

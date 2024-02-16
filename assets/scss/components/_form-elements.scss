@@ -1,0 +1,62 @@
+/*
+    ==== FORM ELEMENTS ====
+
+    Component description:
+        Form elements of website.
+    
+    Modificators:
+        No modificators.
+*/
+
+@use "../variables" as vars;
+
+$gray: #dadadb;
+
+input {
+    width: 100%;
+    padding-bottom: 10px;
+    padding-top: 10px;
+    padding-left: 10px;
+    border: 1px solid transparent;
+    border-bottom: 1px solid $gray;
+    color: vars.$text-primary-color;
+    background-color: transparent;
+    @include vars.font(vars.$font-primary-regular, initial, vars.$fs-small, vars.$fs-small);
+
+    &:focus {
+        outline: none;
+    }
+
+    &.active:focus {
+        border: 1px solid $gray;
+    }
+
+    &.active {
+        outline: none;
+        border: 1px solid vars.$brand-secondary-color;
+
+        & + label {
+            color: vars.$text-secondary-color;
+            transform: translateY(-12px);
+            bottom: unset;
+            font-size: 16px;
+            background-color: #fff;
+            transition: 0.2s ease;
+        } 
+    }
+}
+
+.input-wrapper {
+    position: relative;
+    
+    label {
+        position: absolute;
+        left: 5px;
+        bottom: 10px;
+        padding: 0 5px;
+        @include vars.font(vars.$font-primary-regular, initial, vars.$fs-small, 2.6rem);
+        color: vars.$text-primary-color;
+        cursor: text;
+        transition: 0.2s ease;
+    }
+}
