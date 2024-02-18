@@ -53,12 +53,17 @@
                             <li>UL list item 2</li>
                             <li>UL list item 3</li>
                         </ol>
+                        <?php
+                            $buttonType="link";
+                            $href="https://www.google.com/";
+                            $target="_blanc";
+                            $text="Go to Google";
+                            include "./partials/elements/components/button.php";
+                        ?>
                         <button class="button button-off--primary">Button off primary</button> <br> <br>
                         <a href="#" class="button button-off--primary">Button off primary link</a> <br> <br>
                         <button class="button button-off--secondary">Button off secondary</button> <br> <br>
                         <a href="#" class="button button-off--secondary">Button off secondary link</a> <br> <br>
-                        <button class="button button-off--tertiary">Button off tertiary</button> <br> <br>
-                        <a href="#" class="button button-off--tertiary">Button off tertiary link</a> <br> <br>
                         <button class="button button-off--tertiary">Button off tertiary</button> <br> <br>
                         <a href="#" class="button button-off--tertiary">Button off tertiary link</a> <br> <br>
                         <button class="button button-bubbles--primary">
@@ -210,7 +215,11 @@
                             <input type="text" id="first-name">
                             <label for="first-name">First Name *</label>
                         </div>
-                        <textarea placeholder="Enter message"></textarea>
+                        
+                        <div class="input-wrapper">
+                            <textarea id="message"></textarea>
+                            <label for="message">Message *</label>
+                        </div>
                         
                     </div>
                 </div>
