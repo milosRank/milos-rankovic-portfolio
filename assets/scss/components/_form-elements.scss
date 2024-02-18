@@ -48,6 +48,10 @@ input {
 
 .input-wrapper {
     position: relative;
+
+    &:not(:last-child) {
+        margin-bottom: 30px;
+    }
     
     label {
         position: absolute;
@@ -55,8 +59,48 @@ input {
         bottom: 10px;
         padding: 0 5px;
         @include vars.font(vars.$font-primary-regular, initial, vars.$fs-small, 2.6rem);
-        color: vars.$text-primary-color;
+        color: #929292;
         cursor: text;
         transition: 0.2s ease;
+    }
+
+    textarea + label {
+        bottom: unset;
+        top: 10px;
+    }
+}
+
+textarea {
+    width: 100%;
+    min-height: 150px;
+    resize: none;
+    outline: none;
+    background-color: transparent;
+    padding: 10px;
+    border: 1px solid #dadadb;
+    color: vars.$text-primary-color;
+    @include vars.font(vars.$font-primary-regular, initial, vars.$fs-small, 2.6rem);
+    
+    &:focus {
+        outline: none;
+    }
+
+    &.active:focus {
+        border: 1px solid $gray;
+    }
+
+    &.active {
+        outline: none;
+        border: 1px solid vars.$brand-secondary-color;
+
+        & + label {
+            color: vars.$text-secondary-color;
+            transform: translateY(-12px);
+            bottom: unset;
+            top: unset;
+            font-size: 16px;
+            background-color: #fff;
+            transition: 0.2s ease;
+        } 
     }
 }
