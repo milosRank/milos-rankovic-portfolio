@@ -24,12 +24,17 @@ header .navigation-menu {
         padding: 0;
     }
 
+    & > ul {
+        display: flex;
+        align-items: center;
+    }
+
     ul li {
         position: relative;
         padding-left: 0;
         list-style: none;
         display: inline-block;
-        // margin-right: 40px;
+        margin-right: 20px;
         padding-left: 0;
         margin-bottom: 0;
         font-size: 1.6rem;
@@ -51,12 +56,12 @@ header .navigation-menu {
         text-decoration: none;
         color: vars.$white;
         padding: 10px 15px;
+    }
 
-        &:hover {
-            background-color: vars.$brand-secondary-color;
-            color: vars.$white;
-            transition: 0.2s cubic-bezier(0.215, 0.610, 0.355, 1);
-        }
+    ul li:not(.active-section):hover {
+        background-color: vars.$brand-secondary-color;
+        color: vars.$white;
+        transition: 0.2s cubic-bezier(0.215, 0.610, 0.355, 1);
     }
 
     /*
@@ -70,12 +75,41 @@ header .navigation-menu {
         & > li {
 
             &.active-section {
-                // TODO
+                
+                a {
+                    background: linear-gradient(-45deg, rgba(255, 255, 255, 0.6), rgba(0, 0, 0, 0));
+                    position: relative;
+                    overflow: hidden;
+            
+                    &::before {
+                        content: '';
+                        position: absolute;
+                        top: -50%;
+                        left: -50%;
+                        width: 200%;
+                        height: 200%;
+                        background: linear-gradient(135deg, transparent 0%, rgba(255, 255, 255, 0.8) 50%, transparent 100%);
+                        animation: shine 3s infinite;
+                    }
+                }
             }
 
             &:last-child {
                 margin-right: 0;
             }
         }
+    }
+}
+
+@keyframes shine {
+
+    0% {
+        transform: translateX(-100%);
+    }
+    50% {
+        transform: translateX(0);
+    }
+    100% {
+        transform: translateX(100%);
     }
 }

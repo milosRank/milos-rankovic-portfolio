@@ -25,7 +25,7 @@
                                         <li>
                                             <a href="#">O meni</a>
                                         </li>
-                                        <li>
+                                        <li class="active-section">
                                             <a href="#">Usluge</a>
                                         </li>
                                         <li>
