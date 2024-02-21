@@ -11,7 +11,8 @@
                         <!-- Logo holder start -->
                         <div class="logo-holder">
                             <div class="logo-holder__inner">
-                                <a href="index.php" aria-label="Go to homepage of Milos Rankovic Portfolio">
+                                <a href="index.php" aria-label="Go to homepage of Milos Rankovic Portfolio" style="text-decoration: none;">
+                                    <span style="font-family: 'primary-bold'; font-size:10rem;line-height: 10rem; color: black;">MR</span>
                                 </a>
                             </div>
                         </div> <!-- Logo holder end -->
@@ -19,7 +20,28 @@
                         <!-- Links holder start -->
                         <div class="links-holder">
                             <div class="links-holder__inner">
-                                
+                                <nav class="navigation-menu">
+                                    <ul>
+                                        <li>
+                                            <a href="#">O meni</a>
+                                        </li>
+                                        <li>
+                                            <a href="#">Usluge</a>
+                                        </li>
+                                        <li>
+                                            <a href="#">Projekti</a>
+                                        </li>
+                                        <li>
+                                            <a href="#">Iskustva klijenata</a>
+                                        </li>
+                                        <li>
+                                            <a href="#">Cenovnik</a>
+                                        </li>
+                                        <li>
+                                            <a href="#">Kontakt</a>
+                                        </li>
+                                    </ul>
+                                </nav>
                             </div>
                         </div> <!-- Links holder end -->
 

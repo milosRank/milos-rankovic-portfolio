@@ -18,7 +18,7 @@
 
 </head>
 
-<body class="homepage">
+<body >
 
     <!-- Page wrapper start -->
     <div class="page-warpper">

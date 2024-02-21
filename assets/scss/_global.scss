@@ -78,7 +78,7 @@ h6 {
 a {
     color: vars.$text-secondary-color;
     font-size: vars.$fs-small;
-    line-height: 3.2rem;
+    line-height: vars.$fs-small;;
 }
 
 p {

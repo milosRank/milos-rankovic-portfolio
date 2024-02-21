@@ -10,6 +10,72 @@
 
 @use "../.././variables" as vars;
 
+
+// Breakpoiont on which navigation menu is moved to sidebar.
+$move_to_sidebar_breakpoint: 1399px;
+
 header .navigation-menu {
-    color: red;
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    
+    ul {
+        margin: 0;
+        padding: 0;
+    }
+
+    ul li {
+        position: relative;
+        padding-left: 0;
+        list-style: none;
+        display: inline-block;
+        // margin-right: 40px;
+        padding-left: 0;
+        margin-bottom: 0;
+        font-size: 1.6rem;
+        line-height: 1.6rem;
+
+        &:last-child {
+            margin-right: 0;
+        }
+
+        &::before {
+            content: none;
+        }
+    }
+
+    ul li a {
+        display: inline-block;
+        font-size: inherit;
+        line-height: inherit;
+        text-decoration: none;
+        color: vars.$white;
+        padding: 10px 15px;
+
+        &:hover {
+            background-color: vars.$brand-secondary-color;
+            color: vars.$white;
+            transition: 0.2s cubic-bezier(0.215, 0.610, 0.355, 1);
+        }
+    }
+
+    /*
+        ==== FIRST LEVEL ====
+    */
+
+    // Parent
+    & > ul {
+
+        // Item
+        & > li {
+
+            &.active-section {
+                // TODO
+            }
+
+            &:last-child {
+                margin-right: 0;
+            }
+        }
+    }
 }
