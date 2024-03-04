@@ -12,7 +12,7 @@
                         <div class="logo-holder">
                             <div class="logo-holder__inner">
                                 <a href="index.php" aria-label="Go to homepage of Milos Rankovic Portfolio" style="text-decoration: none;">
-                                    <span style="font-family: 'primary-bold'; font-size:10rem;line-height: 10rem; color: black;">MR</span>
+                                    <span style="font-family: 'primary-semi-bold'; font-size:10rem;line-height: 10rem; color: white;">MR</span>
                                 </a>
                             </div>
                         </div> <!-- Logo holder end -->

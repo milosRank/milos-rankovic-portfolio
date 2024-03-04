@@ -28,6 +28,9 @@
 
         <main> <!-- Main start -->
 
+            <!-- Hero section -->
+            <?php include 'sections/hero-section.php';?>
+
         </main> <!-- Main end -->
 
 

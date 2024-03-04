@@ -96,6 +96,10 @@ strong {
     font-family: vars.$font-primary-semi-bold;
 }
 
+.dot {
+    color: vars.$text-sixth-color;
+}
+
 
 
 // ==== Block elements ====
@@ -197,6 +201,22 @@ ol {
 // IOS
 .screen-locked.ios-device {
     position: fixed;
+}
+
+
+
+// ==== Background color modifications ====
+
+.bg-dark-grey,
+.bg-dark-blue,
+.bg-blue {
+    color: vars.$white;
+
+    p,
+    a:not(.button),
+    li {
+        color: inherit;
+    }
 }
 
 
