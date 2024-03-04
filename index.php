@@ -31,6 +31,9 @@
             <!-- Hero section -->
             <?php include 'sections/hero-section.php';?>
 
+            <!-- Contact section -->
+            <?php include 'sections/contact.php';?>
+
         </main> <!-- Main end -->
 
 

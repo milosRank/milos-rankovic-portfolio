@@ -91,8 +91,38 @@ a.button:hover {
 
 
 /*
-    ==== GOOEY BUTTON ====
+    ==== BUBBLES BUTTON ====
 */
+
+@keyframes translateToBottom {
+        
+    0% {
+        transform: translateY(0);
+    }
+    
+    50% {
+        transform: translateY(-10px);
+    }
+    
+    100% {
+        transform: translateY(0);
+    }
+}
+
+@keyframes translateToTop {
+        
+    0% {
+        transform: translateY(0);
+    }
+    
+    50% {
+        transform: translateY(10px);
+    }
+    
+    100% {
+        transform: translateY(0);
+    }
+}
 
 .button--bubbles {
     @extend .button;
@@ -101,6 +131,24 @@ a.button:hover {
     filter: url('#gooey');
     position: relative;
     background-color: vars.$brand-tertiary-color;
+
+    &:hover {
+        background-color: #ffd20b;
+
+        .letter:nth-child(even) {
+            animation: translateToBottom 0.5s;
+            display: inline-block;
+        }
+        
+        .letter:nth-child(odd) {
+            animation: translateToTop 0.5s;
+            display: inline-block;
+        }
+
+        .bubbles .bubble {
+            background-color: #ffd20b;
+        }
+    }
 
     svg {
         position: absolute;
@@ -180,6 +228,14 @@ a.button:hover {
 .button-bubbles--tertiary {
     @extend .button--bubbles;
     background-color: vars.$brand-fifth-color;
+
+    &:hover {
+        background-color: #ffd20b;
+
+        .bubbles .bubble {
+            background-color: #ffd20b;
+        }
+    }
 
     .bubbles .bubble {
         background-color: vars.$brand-fifth-color;
