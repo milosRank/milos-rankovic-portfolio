@@ -13,6 +13,7 @@
 
 :root {
     font-size: 62.5%; // We are changing the value of rem to 1rem = 10px instead of default 1rem = 16px because of the easier calculations
+    scroll-behavior: smooth;
 }
 
 *,
