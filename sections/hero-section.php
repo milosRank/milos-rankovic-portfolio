@@ -11,7 +11,6 @@
                         <div class="title">
                             <h1>Pretvorite Vaše ideje u digitalnu stvarnost<span class="dot">.</span></h1>
                         </div>
-                    </div>
 
                     <div class="content">
                         <div class="text">
@@ -22,9 +21,8 @@
                             </p>
                         </div>
                     </div>
-
                     <div class="cta-wrapper">
-                        <a class="button button-off--tertiary" href="#contact-us">Stupimo u kontakt</a>
+                        <a class="button button-off--tertiary" href="#get-in-touch">Stupimo u kontakt</a>
                     </div>
                     
                 </div> <!-- Hero section inner end -->

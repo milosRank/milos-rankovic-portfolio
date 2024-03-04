@@ -1,5 +1,5 @@
 <!-- Contact section start --> 
-<section class="contact">
+<section class="contact" id="get-in-touch">
     <div class="container-fluid">
         <div class="wrapper">
             <div class="container">
@@ -20,7 +20,7 @@
                         </p>
                     </div>
 
-                    <form action="#" method="post">
+                    <form id="contact-form" action="#" method="post">
                         <div class="input-wrapper">
                             <input id="full_name" type="text" name="full_name">
                             <label for="full_name">Ime i prezime *</label>
