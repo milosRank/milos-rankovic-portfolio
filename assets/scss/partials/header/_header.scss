@@ -18,7 +18,11 @@ header {
     right: 0;
     transition: transform 0.5s cubic-bezier(0.175, 0.885, 0.32, 1.275);
     z-index: 10;
-    background-color: vars.$brand-tertiary-color;
+    background-color: vars.$brand-secondary-color;
+
+    button.hamburger-button {
+        display: none;
+    }
 
     &.hide {
         transform: translateY(-100%);
@@ -30,5 +34,15 @@ header {
         flex-wrap: wrap;
         justify-content: space-between;
         align-items: center;
+    }
+}
+
+@media(max-width: 1199px) {
+    
+    header {
+        
+        button.hamburger-button {
+            display: flex;
+        }
     }
 }

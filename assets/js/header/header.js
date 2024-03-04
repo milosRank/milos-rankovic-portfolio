@@ -2,7 +2,7 @@
 import { HEADER, ROOT } from '../utils/dom-elements.js';
 
 // Class names
-import { class_header } from '../utils/dom-class-names.js';
+import { class_header, class_navMenu } from '../utils/dom-class-names.js';
 
 // Global functions
 import { createScrollDirectionTracker, appendCSSVariable } from '../global/global.js';
@@ -40,7 +40,7 @@ import { createScrollDirectionTracker, appendCSSVariable } from '../global/globa
             this.getScrollDirection = createScrollDirectionTracker(); // Create scroll direction tracker for header object
 
             // Add NavigationMenu to Header
-            // this.navigationMenu = new NavigationMenu(`header .${class_navMenu.container}`, 1399, `header .${class_navMenu.menuToggler}`);
+            this.navigationMenu = new NavigationMenu(`header .${class_navMenu.container}`, 1399, `header .${class_navMenu.menuToggler}`);
 
         }
 

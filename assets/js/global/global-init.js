@@ -5,8 +5,10 @@ import { ROOT } from '../utils/dom-elements.js';
 import { class_iosDevice } from '../utils/dom-class-names.js';
 
 // Global functions
-import { isIOS } from './global.js';
+import { appendCSSVariable, getScrollbarWidth, isIOS, SCREEN_LOCKER } from './global.js';
 
+
+const appendScrollbarWidthAsCssVariable = () => appendCSSVariable.call(null, "scrollbarWidth", `${ getScrollbarWidth() }px`);
 
 // Load event
 window.addEventListener("load", function() {
@@ -15,7 +17,9 @@ window.addEventListener("load", function() {
     if(isIOS()) ROOT.classList.add(class_iosDevice);
 
     // Regulate screen lock
-    // SCREEN_LOCKER.regulateScreenLock();
+    SCREEN_LOCKER.regulateScreenLock();
+
+    appendScrollbarWidthAsCssVariable();
 
 });
 
@@ -24,6 +28,8 @@ window.addEventListener("load", function() {
 window.addEventListener("resize", function() {
 
     // Regulate screen lock
-    // SCREEN_LOCKER.regulateScreenLock();
+    SCREEN_LOCKER.regulateScreenLock();
+
+    appendScrollbarWidthAsCssVariable();
 
 });

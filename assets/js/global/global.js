@@ -217,16 +217,9 @@ export const SCREEN_LOCKER = new ScreenLocker();
 export let scrollToElement = (element) => element.scrollIntoView({ behavior: "smooth" });
 
 
-
-export function scrollToNextSection(trigger) {
-
-    // If there is no trigger exit
-    if(!trigger) return;
-
-    // Get next section
-    let section = trigger.closest("section").nextElementSibling;
-
-    // Scroll to next section on trigget click
-    if(section) trigger.addEventListener("click", () => scrollToElement(section));
-
-}
+/**
+ * Get width of scrollbar in pixels
+ * 
+ * @returns {Int} - Width of scrollbar in pixels
+ */
+export const getScrollbarWidth = () => window.innerWidth - document.documentElement.clientWidth;

@@ -24,6 +24,12 @@
 
 html.screen-locked {
     overflow-y: hidden;
+    padding-right: var(--scrollbarWidth, 17px);
+
+    header {
+        padding-right: var(--scrollbarWidth, 17px);
+    }
+
 }
 
 body {

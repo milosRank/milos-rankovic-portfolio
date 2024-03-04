@@ -42,6 +42,15 @@
                                         </li>
                                     </ul>
                                 </nav>
+
+                                <button class="hamburger-button nav-menu-toggler" aria-label="Mobile menu navigation toggler">
+                                    <div class="btn-bar btn-bar--to-open"></div>
+                                    <div class="btn-bar btn-bar--to-open"></div>
+                                    <div class="btn-bar btn-bar--to-open"></div>
+                                    <div class="btn-bar btn-bar--to-close"></div>
+                                    <div class="btn-bar btn-bar--to-close"></div>
+                                </button>
+
                             </div>
                         </div> <!-- Links holder end -->
 

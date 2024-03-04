@@ -89,7 +89,8 @@ import { lockScreen, unlockScreen } from "../global/global.js";
      * @returns {Void}
      */
     ScreenLocker.prototype.calcualteCondition = function () {
-        this.condition = (window.innerWidth <= this.breakpoint && this.isNavMenuActive) || this.isPopupActive;
+        // this.condition = (window.innerWidth <= this.breakpoint && this.isNavMenuActive) || this.isPopupActive;
+        this.condition = (window.innerWidth <= this.breakpoint && this.isNavMenuActive)
     }
 
 
