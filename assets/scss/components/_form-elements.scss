@@ -104,3 +104,53 @@ textarea {
         } 
     }
 }
+
+
+// ==== Background color modifications ====
+
+.bg-dark-grey {
+
+    input,
+    textarea {
+        color: vars.$white;
+    }
+
+    input.active,
+    textarea.active {
+
+        & + label {
+            background-color: vars.$dark-grey;
+        }
+    }
+}
+
+.bg-whiteish {
+
+    input {
+        border-bottom: 1px solid #b5b5b9;
+    }
+    
+    textarea {
+        border-color: #b5b5b9;
+    }
+
+    input.active + label,
+    textarea.active + label {
+        background-color: vars.$whiteish;
+    }
+
+    input.active,
+    textarea.active {
+        border: 1px solid vars.$brand-sixth-color;
+
+        & + label {
+            background-color: vars.$whiteish;
+            color: vars.$brand-sixth-color;
+        }
+    }
+}
+
+.just-validate-error-label {
+    font-size: 14px;
+    position: absolute;
+}

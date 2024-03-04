@@ -13,6 +13,7 @@
 
 :root {
     font-size: 62.5%; // We are changing the value of rem to 1rem = 10px instead of default 1rem = 16px because of the easier calculations
+    scroll-behavior: smooth;
 }
 
 *,
@@ -24,6 +25,12 @@
 
 html.screen-locked {
     overflow-y: hidden;
+    padding-right: var(--scrollbarWidth, 17px);
+
+    header {
+        padding-right: var(--scrollbarWidth, 17px);
+    }
+
 }
 
 body {
@@ -78,7 +85,7 @@ h6 {
 a {
     color: vars.$text-secondary-color;
     font-size: vars.$fs-small;
-    line-height: 3.2rem;
+    line-height: vars.$fs-small;;
 }
 
 p {
@@ -88,6 +95,10 @@ p {
 
 strong {
     font-family: vars.$font-primary-semi-bold;
+}
+
+.dot {
+    color: vars.$text-sixth-color;
 }
 
 
@@ -191,6 +202,22 @@ ol {
 // IOS
 .screen-locked.ios-device {
     position: fixed;
+}
+
+
+
+// ==== Background color modifications ====
+
+.bg-dark-grey,
+.bg-dark-blue,
+.bg-blue {
+    color: vars.$white;
+
+    p,
+    a:not(.button),
+    li {
+        color: inherit;
+    }
 }
 
 

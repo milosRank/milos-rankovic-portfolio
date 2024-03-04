@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="sr">
 
 <head>
 
@@ -18,7 +18,7 @@
 
 </head>
 
-<body class="homepage">
+<body >
 
     <!-- Page wrapper start -->
     <div class="page-warpper">
@@ -27,6 +27,12 @@
         <?php include 'partials/elements/header.php'; ?>
 
         <main> <!-- Main start -->
+
+            <!-- Hero section -->
+            <?php include 'sections/hero-section.php';?>
+
+            <!-- Contact section -->
+            <?php include 'sections/contact.php';?>
 
         </main> <!-- Main end -->
 

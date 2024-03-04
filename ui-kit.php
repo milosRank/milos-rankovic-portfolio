@@ -18,7 +18,7 @@
 
 </head>
 
-<body class="homepage">
+<body >
 
     <!-- Page wrapper start -->
     <div class="page-warpper">
@@ -53,13 +53,6 @@
                             <li>UL list item 2</li>
                             <li>UL list item 3</li>
                         </ol>
-                        <?php
-                            $buttonType="link";
-                            $href="https://www.google.com/";
-                            $target="_blanc";
-                            $text="Go to Google";
-                            include "./partials/elements/components/button.php";
-                        ?>
                         <button class="button button-off--primary">Button off primary</button> <br> <br>
                         <a href="#" class="button button-off--primary">Button off primary link</a> <br> <br>
                         <button class="button button-off--secondary">Button off secondary</button> <br> <br>
