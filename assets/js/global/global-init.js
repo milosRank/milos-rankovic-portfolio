@@ -25,6 +25,8 @@ window.addEventListener("load", function() {
 
     setServicesBoxesTitleHeightEqual();
 
+    ROOT.classList.add("dom-content-loaded");
+
 });
 
 

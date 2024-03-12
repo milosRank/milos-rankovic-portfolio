@@ -22,10 +22,17 @@
         &.not-cover {
 
             img {
-                max-width: 80%;
                 top: 30%;
                 transform: rotate(-45deg);
             }
+        }
+
+        &::after {
+            @include vars.pseudo("", 100%, 100%, absolute);
+            transition: 2s ease;
+            opacity: 1;
+            background-color: vars.$brand-sixth-color;
+            z-index: 5;
         }
     }
 
@@ -66,6 +73,19 @@
 
     .cta-wrapper {
         margin-top: 50px;
+    }
+}
+
+html.dom-content-loaded {
+
+    .hero-section {
+
+        .section-bg-image {
+    
+            &::after {
+                height: 0;
+            }
+        }
     }
 }
 

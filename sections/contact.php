@@ -5,7 +5,7 @@
             <div class="container">
 
                 <!-- Contact section inner start --> 
-                <div class="contact__inner bg-whiteish">
+                <div class="contact__inner bg-white">
 
                     <div class="heading">
                         <div class="title">

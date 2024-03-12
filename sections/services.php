@@ -12,6 +12,11 @@
                         <div class="title">
                             <h2>Usluge</h2>
                         </div>
+                        <div class="subtitle">
+                            <p>
+                                Velika paleta usluga u kojoj svako može pronaći ono što mu je potrebno.
+                            </p>
+                        </div>
                     </div>
 
                     <!-- Boxes holder start --> 
