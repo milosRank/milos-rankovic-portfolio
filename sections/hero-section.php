@@ -1,5 +1,10 @@
 <!-- Hero section start --> 
 <section class="hero-section bg-dark-grey">
+
+    <div class="section-bg-image overlay not-cover">
+        <img src="./assets/img/icons/arrows/arrow-trend-up-solid-gradient.svg" alt="Arrow trend up" width="500">
+    </div>
+
     <div class="container-fluid">
         <div class="wrapper">
             <div class="container">
@@ -11,6 +16,7 @@
                         <div class="title">
                             <h1>Pretvorite Vaše ideje u digitalnu stvarnost<span class="dot">.</span></h1>
                         </div>
+                    </div>
 
                     <div class="content">
                         <div class="text">

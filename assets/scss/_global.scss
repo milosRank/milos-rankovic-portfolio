@@ -110,16 +110,70 @@ img {
     width: auto;
     height: auto;
 }
-
 section {
     position: relative;
 
+    .section-bg-image {
+        position: absolute;
+        width: 100%;
+        height: 100%;
+        object-fit: cover;
+        top: 0;
+        right: 0;
+        bottom: 0;
+        left: 0;
+        z-index: 2;
+
+        img {
+            width: 100%;
+            height: 100%;
+            object-fit: cover;
+            position: absolute;
+            top: 0;
+            right: 0;
+            bottom: 0;
+            left: 0;
+        }
+
+        &.overlay::before {
+            content: "";
+            position: absolute;
+            width: 100%;
+            height: 100%;
+            object-fit: cover;
+            top: 0;
+            right: 0;
+            bottom: 0;
+            left: 0;
+            z-index: 1;
+            background: vars.$brand-sixth-color;
+            opacity: 0.85;
+        }
+    }
+
+    .section-bg-image.not-cover {
+        width: auto;
+        height: auto;
+        object-fit: unset;
+
+        img {
+            width: auto;
+            height: auto;
+            object-fit: unset;
+            left: unset;
+            top: 0;
+        }
+
+        &.overlay::before {
+            opacity: 0.5;
+        }
+    }
+
     .container-fluid {
-        z-index: 1;
         position: relative;
+        z-index: 3;
     }
 }
-
 
 
 // ==== Lists ====

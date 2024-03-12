@@ -8,6 +8,9 @@
     <meta name="description" content="" />
     <meta name="keywords" content="" />
 
+    <!-- PRELOAD -->
+    <?php include 'partials/resources/preload.php';?>
+
     <!-- CSS -->
     <?php include 'partials/resources/styles.php';?>
 
@@ -30,6 +33,9 @@
 
             <!-- Hero section -->
             <?php include 'sections/hero-section.php';?>
+
+            <!-- Services section -->
+            <?php include 'sections/services.php';?>
 
             <!-- Contact section -->
             <?php include 'sections/contact.php';?>

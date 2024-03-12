@@ -38,7 +38,7 @@
                                             <a href="#">Cenovnik</a>
                                         </li>
                                         <li>
-                                            <a href="#">Kontakt</a>
+                                            <a href="#get-in-touch">Kontakt</a>
                                         </li>
                                     </ul>
                                 </nav>

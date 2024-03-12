@@ -5,10 +5,12 @@ import { ROOT } from '../utils/dom-elements.js';
 import { class_iosDevice } from '../utils/dom-class-names.js';
 
 // Global functions
-import { appendCSSVariable, getScrollbarWidth, isIOS, SCREEN_LOCKER } from './global.js';
+import { appendCSSVariable, getScrollbarWidth, isIOS, SCREEN_LOCKER, equalizeElementsHeight } from './global.js';
 
 
 const appendScrollbarWidthAsCssVariable = () => appendCSSVariable.call(null, "scrollbarWidth", `${ getScrollbarWidth() }px`);
+
+const setServicesBoxesTitleHeightEqual = equalizeElementsHeight.bind(null, ".services .box .title", 767);
 
 // Load event
 window.addEventListener("load", function() {
@@ -21,6 +23,10 @@ window.addEventListener("load", function() {
 
     appendScrollbarWidthAsCssVariable();
 
+    setServicesBoxesTitleHeightEqual();
+
+    ROOT.classList.add("dom-content-loaded");
+
 });
 
 
@@ -31,5 +37,7 @@ window.addEventListener("resize", function() {
     SCREEN_LOCKER.regulateScreenLock();
 
     appendScrollbarWidthAsCssVariable();
+
+    setServicesBoxesTitleHeightEqual();
 
 });
