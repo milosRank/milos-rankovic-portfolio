@@ -57,6 +57,7 @@
 
         .icon {
             margin-bottom: 30px;
+            font-size: 0;
         }
 
         .title {
@@ -91,6 +92,22 @@
 
 
 // RESPONSIVE
+
+@media(min-width: 576px) {
+
+    .services {
+
+        .boxes-holder__inner {
+
+            .box {
+                
+                .icon {
+                    min-height: 100px;
+                }
+            }
+        }
+    }
+}
 
 @media(min-width: 768px) {
 

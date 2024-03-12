@@ -25,13 +25,14 @@
                                         <img src="./assets/img/icons/code-gradient.svg" alt="Code icon">
                                     </div>
                                     <div class="title">
-                                        <h3>Custom coding</h3>    
+                                        <h3>Razvoj softvera</h3>    
                                     </div>
 
                                     <div class="content">
                                         <p>
-                                            Lorem ipsum dolor, sit amet consectetur adipisicing elit. 
-                                            Iste, nam iusto amet blanditiis ab.
+                                            Visokokvalitetna izrada prilagodljivih veb sajtova, 
+                                            internet prodavnica, internet aplikacija, kao i 
+                                            implementacija raznih sistema za upravljanje sadržajem.
                                         </p>
                                     </div>
                                 </div>
@@ -41,16 +42,15 @@
                             <div class="box">
                                 <div class="box__inner">
                                     <div class="icon">
-                                        <img src="./assets/img/icons/code-gradient.svg" alt="Code icon">
+                                        <img src="./assets/img/icons/paint-roller-gradient.svg" alt="Paint roller icon">
                                     </div>
                                     <div class="title">
-                                        <h3>Custom coding</h3>    
+                                        <h3>Web i UI/UX dizajn</h3>    
                                     </div>
 
                                     <div class="content">
                                         <p>
-                                            Lorem ipsum dolor, sit amet consectetur adipisicing elit. 
-                                            Iste, nam iusto amet blanditiis ab.
+                                            Kreiranje jedinstvenog i lako prepoznatljivog vizuelnog identiteta.
                                         </p>
                                     </div>
                                 </div>
@@ -60,16 +60,16 @@
                             <div class="box">
                                 <div class="box__inner">
                                     <div class="icon">
-                                        <img src="./assets/img/icons/code-gradient.svg" alt="Code icon">
+                                        <img src="./assets/img/icons/seo-gradient.svg" alt="SEO icon">
                                     </div>
                                     <div class="title">
-                                        <h3>Custom coding</h3>    
+                                        <h3>SEO</h3>    
                                     </div>
 
                                     <div class="content">
                                         <p>
-                                            Lorem ipsum dolor, sit amet consectetur adipisicing elit. 
-                                            Iste, nam iusto amet blanditiis ab.
+                                            Optimizacija Vaše online prisutnosti kako biste postigli bolje 
+                                            rangiranje na pretraživačima i privukli više ciljane publike.
                                         </p>
                                     </div>
                                 </div>
@@ -79,40 +79,19 @@
                             <div class="box">
                                 <div class="box__inner">
                                     <div class="icon">
-                                        <img src="./assets/img/icons/code-gradient.svg" alt="Code icon">
+                                        <img src="./assets/img/icons/content-gradient.svg" alt="Content icon">
                                     </div>
                                     <div class="title">
-                                        <h3>Custom coding</h3>    
+                                        <h3>Kreiranje sadražaja</h3>    
                                     </div>
 
                                     <div class="content">
                                         <p>
-                                            Lorem ipsum dolor, sit amet consectetur adipisicing elit. 
-                                            Iste, nam iusto amet blanditiis ab.
+                                            Kreiranje informativnog, privlačnog sadržaja relevantnog za web pretraživace.
                                         </p>
                                     </div>
                                 </div>
                             </div> <!-- Box end -->
-
-                            <!-- Box start --> 
-                            <div class="box">
-                                <div class="box__inner">
-                                    <div class="icon">
-                                        <img src="./assets/img/icons/code-gradient.svg" alt="Code icon">
-                                    </div>
-                                    <div class="title">
-                                        <h3>Custom coding</h3>    
-                                    </div>
-
-                                    <div class="content">
-                                        <p>
-                                            Lorem ipsum dolor, sit amet consectetur adipisicing elit. 
-                                            Iste, nam iusto amet blanditiis ab.
-                                        </p>
-                                    </div>
-                                </div>
-                            </div> <!-- Box end -->
-
                         </div>
                     </div> <!-- Boxes holder end -->
                     
