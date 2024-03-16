@@ -3,7 +3,7 @@
 
     Description: 
         Contact of website.
-    
+
     Modificators:
         No modificators.
 
@@ -16,40 +16,46 @@
     padding-bottom: 100px;
     background-color: vars.$dark-grey;
 
+    .heading-and-text {
+        color: vars.$white;
+    }
+
+    .heading {
+        margin-bottom: 20px;
+
+        .title {
+
+            h1,
+            h2,
+            h3,
+            h4,
+            h5,
+            h6 {
+                font-size: vars.$fs-medium-large;
+                line-height: calc(vars.$fs-medium-large + 1rem);
+                margin-top: 0;
+                margin-bottom: 0;
+            }
+        }
+    }
+
+    .text {
+        margin-bottom: 50px;
+        max-width: 700px;
+
+        & > *:first-child {
+            margin-top: 0;
+        }
+
+        & > *:last-child {
+            margin-bottom: 0;
+        }
+    }
+
     .contact__inner {
         padding: 50px;
         border-radius: 32px;
 
-        .heading {
-            margin-bottom: 20px;
-
-            .title {
-
-                h1,
-                h2,
-                h3,
-                h4,
-                h5,
-                h6 {
-                    font-size: vars.$fs-medium-large;
-                    line-height: calc(vars.$fs-medium-large + 1rem);
-                    margin-top: 0;
-                    margin-bottom: 0;
-                }
-            }
-        }
-
-        .text {
-            margin-bottom: 50px;
-
-            & > *:first-child {
-                margin-top: 0;
-            }
-
-            & > *:last-child {
-                margin-bottom: 0;
-            }
-        }
 
         .cta-wrapper {
             margin-top: 60px;
@@ -88,7 +94,6 @@
     .contact {
         padding-top: 50px;
         padding-bottom: 50px;
-        scroll-margin-top: 50px;
 
         .contact__inner {
             padding: 30px;

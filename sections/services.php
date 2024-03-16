@@ -1,5 +1,5 @@
 <!-- Services section start --> 
-<section class="services">
+<section class="services" id="services">
 
     <div class="container-fluid">
         <div class="wrapper">
@@ -8,16 +8,17 @@
                 <!-- Services section inner start --> 
                 <div class="services__inner">
 
+                    <!-- Heading start -->
                     <div class="heading text-center">
                         <div class="title">
                             <h2>Usluge</h2>
                         </div>
                         <div class="subtitle">
                             <p>
-                                Velika paleta usluga u kojoj svako može pronaći ono što mu je potrebno.
+                                Široka paleta usluga u kojoj svako može pronaći ono što mu je potrebno.
                             </p>
                         </div>
-                    </div>
+                    </div> <!-- Heading end -->
 
                     <!-- Boxes holder start --> 
                     <div class="boxes-holder">
@@ -68,13 +69,13 @@
                                         <img src="./assets/img/icons/seo-gradient.svg" alt="SEO icon">
                                     </div>
                                     <div class="title">
-                                        <h3>SEO</h3>    
+                                        <h3>SEO</h3>
                                     </div>
 
                                     <div class="content">
                                         <p>
-                                            Optimizacija Vaše online prisutnosti kako biste postigli bolje 
-                                            rangiranje na pretraživačima i privukli više ciljane publike.
+                                            Optimizacija Vaše online prisutnost. Postignite bolje
+                                            rangiranje na pretraživačima i privucite više ciljane publike.
                                         </p>
                                     </div>
                                 </div>

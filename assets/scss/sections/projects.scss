@@ -1,0 +1,180 @@
+/*
+    ==== PROJECTS ====
+
+    Description: 
+        Projects of website.
+
+    Modificators:
+        No modificators.
+
+*/
+
+@use "../variables" as vars;
+
+.projects {
+    padding-top: 100px;
+    padding-bottom: 100px;
+
+    .heading {
+        margin-bottom: 100px;
+
+        .title {
+
+            h1,
+            h2,
+            h3,
+            h4,
+            h5,
+            h6 {
+                font-size: vars.$fs-medium-large;
+                line-height: calc(vars.$fs-medium-large + 1rem);
+                margin-top: 0;
+                margin-bottom: 0;
+            }
+        }
+    }
+
+    .box {
+
+        a {
+            display: inline-block;
+            text-decoration: none;
+            color: vars.$text-primary-color;
+
+            &:hover {
+
+                .featured-image {
+
+                    .overlay {
+                        opacity: 1;
+                        transition: 0.3s ease;
+                    }
+                }
+        
+            }
+        }
+
+        .featured-image {
+            position: relative;
+            margin-bottom: 20px;
+            font-size: 0;
+            line-height: 0;
+
+            .overlay {
+                opacity: 0;
+                transition: 0.3s ease;
+                position: absolute;
+                width: 100%;
+                height: 100%;
+                top: 0;
+                left: 0;
+                right: 0;
+                bottom: 0;
+                display: flex;
+                align-items: center;
+                justify-content: center;
+                background-color: rgba(64, 162, 216, 0.9);
+                color: vars.$text-fifth-color;
+                font-size: 2.2rem;
+                line-height: 2.5rem;
+
+            }
+        }
+
+        .labels-wrapper {
+            display: flex;
+            margin-bottom: 10px;
+            font-size: 1.7rem;
+
+            .label {
+                position: relative;
+
+                &:not(:last-child) {
+                    padding-right: 30px;
+
+                    &::before {
+                        @include vars.pseudo("", 5px, 5px, absolute);
+                        right: 15px;
+                        top: 52%;
+                        transform: translateY(-50%);
+                        display: inline-block;
+                        background-color: vars.$brand-fifth-color;
+                        border-radius: 50%;
+                    }
+                }
+            }
+        }
+
+        .title {
+
+            h1,
+            h2,
+            h3,
+            h4,
+            h5,
+            h6 {
+                margin-top: 0;
+                margin-bottom: 0;
+                font-size: vars.$fs-medium-small;
+                line-height: 4rem;
+            }
+        }
+
+        .separator {
+            height: 2px;
+            width: 100%;
+            background-color: vars.$brand-fifth-color;
+            margin: 30px 0;
+        }
+
+        .project-information {
+            display: flex;
+
+            .information {
+
+                &:not(:last-child) {
+                    margin-right: 40px;
+                }
+
+                .title {
+                    font-size: 1.7rem;
+                    margin-bottom: 20px;
+                }
+
+                .value {
+                    font-size: 3rem;
+                    line-height: 3.5rem;
+                }
+            }
+        }
+    }
+}
+
+
+
+// RESPONSIVE
+
+@media(min-width: 768px) {
+
+    .projects {
+
+        .projects-list {
+            display: flex;
+            justify-content: space-between;
+            gap: 40px;
+            flex-wrap: wrap;
+
+            .box {
+                width: calc(50% - 40px);
+            }
+        }
+    }
+}
+
+@media(max-width: 575px) {
+
+    .projects {
+        padding-top: 50px;
+        padding-bottom: 50px;
+    }
+}
