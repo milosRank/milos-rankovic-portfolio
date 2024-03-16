@@ -22,14 +22,11 @@
                             <div class="links-holder__inner">
                                 <nav class="navigation-menu">
                                     <ul>
-                                        <li>
-                                            <a href="#">O meni</a>
-                                        </li>
                                         <li class="active-section">
-                                            <a href="#">Usluge</a>
+                                            <a href="#services">Usluge</a>
                                         </li>
                                         <li>
-                                            <a href="#">Projekti</a>
+                                            <a href="#projects">Projekti</a>
                                         </li>
                                         <li>
                                             <a href="#">Iskustva klijenata</a>

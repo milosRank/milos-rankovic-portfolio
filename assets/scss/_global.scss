@@ -21,6 +21,7 @@
 *::before {
     box-sizing: border-box;
     -webkit-tap-highlight-color: transparent;
+    scroll-margin-top: 50px;
 }
 
 html.screen-locked {
@@ -101,6 +102,23 @@ strong {
     color: vars.$text-sixth-color;
 }
 
+.heading {
+
+    .title:not(:last-child) {
+        margin-bottom: 30px;
+    }
+
+    .subtitle {
+
+        *:first-child {
+            margin-top: 0;
+        }
+
+        *:last-child {
+            margin-bottom: 0;
+        }
+    }
+}
 
 
 // ==== Block elements ====

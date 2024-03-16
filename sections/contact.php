@@ -4,30 +4,35 @@
         <div class="wrapper">
             <div class="container">
 
+            <div class="heading-and-text">
+                <div class="heading">
+                    <div class="title">
+                        <h2>Stupimo u kontakt<span class="dot">.</span></h2>
+                    </div>
+                </div>
+
+                <div class="text">
+                    <p>
+                        Slobodno mi se obratite koristeći obrazac ispod
+                        a ja ću Vam se javiti što je pre moguće.
+                    </p>
+                </div>
+            </div>
+
                 <!-- Contact section inner start --> 
                 <div class="contact__inner bg-white">
 
-                    <div class="heading">
-                        <div class="title">
-                            <h2>Stupimo u kontakt<span class="dot">.</span></h2>
-                        </div>
-                    </div>
-
-                    <div class="text">
-                        <p>
-                            Slobodno mi se obratite koristeći obrazac ispod, 
-                            a ja ću Vam se javiti što je pre moguće.
-                        </p>
-                    </div>
-
                     <form id="contact-form" action="#" method="post">
-                        <div class="input-wrapper">
-                            <input id="full_name" type="text" name="full_name">
-                            <label for="full_name">Ime i prezime *</label>
-                        </div>
-                        <div class="input-wrapper">
-                            <input id="email" type="email" name="email">
-                            <label for="email">Email *</label>
+
+                        <div class="column-wrapper">
+                            <div class="input-wrapper">
+                                <input id="full_name" type="text" name="full_name">
+                                <label for="full_name">Ime i prezime *</label>
+                            </div>
+                            <div class="input-wrapper">
+                                <input id="email" type="email" name="email">
+                                <label for="email">Email *</label>
+                            </div>
                         </div>
                         <div class="input-wrapper">
                             <textarea id="message" name="message"></textarea>

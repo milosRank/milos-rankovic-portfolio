@@ -21,9 +21,8 @@
                     <div class="content">
                         <div class="text">
                             <p>
-                                Lorem ipsum dolor sit, amet consectetur adipisicing elit. Sit harum ex non sequi 
-                                mollitia nesciunt voluptatem dolores aspernatur ducimus aut et ipsa pariatur 
-                                perferendis, nihil quod at nemo illum laboriosam.
+                                Nadogradite svoje poslovanje kroz digitalnu transformaciju i otvorite vrata novim mogućnostima.
+                                Budite uvek za korak ispred konkurencije.
                             </p>
                         </div>
                     </div>

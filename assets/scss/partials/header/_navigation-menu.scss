@@ -47,6 +47,17 @@ header .navigation-menu {
         &::before {
             content: none;
         }
+
+        &.active-section {
+
+            a {
+                background: linear-gradient(to right, #5B86E5, #48ACE0, #36D1DC);
+                -webkit-text-fill-color: transparent;
+                background-clip: text;
+                -webkit-background-clip: text;
+                transition: 0.2s ease;
+            }
+        }
     }
 
     ul li a {
@@ -71,37 +82,13 @@ header .navigation-menu {
 
         // Item
         & > li {
+            background: linear-gradient(0deg, vars.$white, vars.$white) no-repeat right bottom / 0 var(--bg-h);
+            transition: background-size 350ms;
+            --bg-h: 2px;
 
-            &.active-section {
-                
-                a {
-                    background: linear-gradient(-45deg, rgba(255, 255, 255, 0.6), rgba(0, 0, 0, 0));
-                    position: relative;
-                    overflow: hidden;
-            
-                    &::before {
-                        content: '';
-                        position: absolute;
-                        top: -50%;
-                        left: -50%;
-                        width: 200%;
-                        height: 200%;
-                        background: linear-gradient(135deg, transparent 0%, rgba(255, 255, 255, 0.4) 50%, transparent 100%);
-                        animation: shine 3s infinite;
-                        box-shadow: 1px 5px 40px 50px;
-                    }
-                }
-            }
-
-            &:not(.active-section) {
-                background: linear-gradient(0deg, vars.$white, vars.$white) no-repeat right bottom / 0 var(--bg-h);
-                transition: background-size 350ms;
-                --bg-h: 2px;
-                
-                &:where(:hover, :focus-visible) {
-                    background-size: 100% var(--bg-h);
-                    background-position-x: left;
-                }
+            &:where(:hover, :focus-visible) {
+                background-size: 100% var(--bg-h);
+                background-position-x: left;
             }
 
             &:last-child {
@@ -111,18 +98,6 @@ header .navigation-menu {
     }
 }
 
-@keyframes shine {
-
-    0% {
-        transform: translateX(-100%);
-    }
-    50% {
-        transform: translateX(0);
-    }
-    100% {
-        transform: translateX(100%);
-    }
-}
 
 
 // RESPONSIVE
@@ -205,8 +180,6 @@ header .navigation-menu {
                 }
 
                 &.active-section a {
-                    background: transparent;
-                    font-family: vars.$font-primary-bold;
 
                     &::before {
                         background: transparent;
