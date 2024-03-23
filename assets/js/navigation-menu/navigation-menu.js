@@ -145,7 +145,7 @@ import { SCREEN_LOCKER } from '../global/global.js';
      * 
      * @returns {Void}
      */
-    NavigationMenu.prototype.setActiveLinkOnScroll = function() {
+    NavigationMenu.prototype.setActiveLinkBasedOnSection = function() {
 
         // Get distance brtween top of the screen and scrolled area
         let fromTop = window.scrollY + 10;
@@ -176,8 +176,9 @@ import { SCREEN_LOCKER } from '../global/global.js';
      */
     NavigationMenu.prototype.attachEvents = function() {
 
-        // Call function on load
+        // *** Call functions on load ***
         this.toggleActiveSidebarClass();
+        this.setActiveLinkBasedOnSection();
 
         window.addEventListener("resize", () => {
 
@@ -188,7 +189,7 @@ import { SCREEN_LOCKER } from '../global/global.js';
 
         window.addEventListener("scrollend", () => {
 
-            this.setActiveLinkOnScroll();
+            this.setActiveLinkBasedOnSection();
 
         });
 

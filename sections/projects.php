@@ -18,7 +18,7 @@
 
                     <!-- Project start -->
                     <div class="project box">
-                        <a href="#">
+                        <a href="https://www.rmalkon.co.rs/" target="_blank">
                             <div class="featured-image">
                                 <img src="./assets/img/projects/rm-alcon/homepage.webp" width="" height="" alt="RM Alcon Homepage"/>
                                 <div class="overlay">
@@ -55,7 +55,7 @@
 
                     <!-- Project start -->
                     <div class="project box">
-                        <a href="#">
+                        <a href="https://www.rmalkon.co.rs/" target="_blank">
                             <div class="featured-image">
                                 <img src="./assets/img/projects/rm-alcon/homepage.webp" width="" height="" alt="RM Alcon Homepage"/>
                                 <div class="overlay">
