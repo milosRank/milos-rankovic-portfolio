@@ -9,3 +9,5 @@
 <script src="assets/js/screen-locker/screen-locker.js" type="module"></script>
 <script src="assets/js/validation/just-validate.min.js"></script>
 <script src="assets/js/validation/validate-contact.js"></script>
+<script src="assets/js/slider/swiper-bundle.min.js"></script>
+<script src="assets/js/slider/slider-init.js" type="module"></script>
