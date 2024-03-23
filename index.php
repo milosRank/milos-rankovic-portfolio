@@ -40,6 +40,9 @@
                 <!-- Projects section -->
                 <?php include 'sections/projects.php';?>
 
+                <!-- Pricing section -->
+                <?php include 'sections/pricing.php';?>
+
                 <!-- Contact section -->
                 <?php include 'sections/contact.php';?>
 

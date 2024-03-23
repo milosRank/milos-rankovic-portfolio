@@ -1,0 +1,70 @@
+/*
+    ==== PRICING SECTION ====
+
+    Description: 
+        pricing section of website.
+
+    Modificators:
+        No modificators.
+
+*/
+
+@use "../variables" as vars;
+
+.pricing {
+    padding-top: 100px;
+    padding-bottom: 100px;
+    scroll-margin-top: 150px;
+
+    .heading {
+
+        .title {
+
+            &:not(:last-child) {
+                margin-bottom: 5px;
+            }
+
+            h1,
+            h2,
+            h3,
+            h4,
+            h5,
+            h6 {
+                font-size: 4rem;
+                line-height: 4.5rem;
+                margin-top: 0;
+                margin-bottom: 0;
+            }
+        }
+
+        .subtitle {
+            color: #758195
+        }
+    }
+
+    .pricing__inner {
+
+        .section-cta {
+            margin-top: 70px;
+        }
+    }
+}
+
+
+
+// RESPONSIVE
+
+@media(min-width: 992px) {
+
+    .pricing__inner {
+        display: flex;
+        align-items: center;
+        gap: 70px;
+
+        .section-cta {
+            min-width: 300px;
+            display: flex;
+            justify-content: flex-end;
+        }
+    }
+}

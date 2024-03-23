@@ -32,7 +32,7 @@
                                             <a href="#">Iskustva klijenata</a>
                                         </li>
                                         <li>
-                                            <a href="#">Cenovnik</a>
+                                            <a href="#pricing">Cenovnik</a>
                                         </li>
                                         <li>
                                             <a href="#get-in-touch">Kontakt</a>

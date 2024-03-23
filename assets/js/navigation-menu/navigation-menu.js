@@ -45,6 +45,7 @@ import { SCREEN_LOCKER } from '../global/global.js';
             this.toSidebarBreakpoint = toSidebarBreakpoint;
             this.HTMLNavMenuElement = document.querySelector(navigationMenuSelector);
             this.toggler = document.querySelector(togglerSelector);
+            this.links = this.HTMLNavMenuElement.querySelectorAll("a");
 
             // Exit if there is no navigation menu
             if(!this.HTMLNavMenuElement) return;
@@ -114,11 +115,27 @@ import { SCREEN_LOCKER } from '../global/global.js';
 
     /**
      * Hides navigation menu when it transform to sidebar
+     * 
+     * @returns {Void}
      */
     NavigationMenu.prototype.hideNavMenuAsSidebar = function() {
 
         this.HTMLNavMenuElement?.classList.remove(NAV_MENU_CLASSES.active);
         this.toggler?.classList.remove(class_navMenu.buttonActive);
+
+    }
+
+
+    /**
+     * Sets active nav menu link
+     * 
+     * @param {HTMLElement} activeLink - link that will be set to active
+     * 
+     * @returns {Void}
+     */
+    NavigationMenu.prototype.setActiveLink = function(activeLink) {
+
+        this.links.forEach(link => link === activeLink ? link.classList.add("active") : link.classList.remove("active"));
 
     }
 
@@ -151,6 +168,12 @@ import { SCREEN_LOCKER } from '../global/global.js';
             });
 
         }
+
+        this.links.forEach(link => {
+
+            link.addEventListener("click", () => this.setActiveLink(link));
+
+        });
 
     }
 

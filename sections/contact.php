@@ -4,23 +4,41 @@
         <div class="wrapper">
             <div class="container">
 
-            <div class="heading-and-text">
-                <div class="heading">
-                    <div class="title">
-                        <h2>Stupimo u kontakt<span class="dot">.</span></h2>
+                <div class="heading-and-text">
+                    <div class="heading">
+                        <div class="title">
+                            <h2>Stupimo u kontakt<span class="dot">.</span></h2>
+                        </div>
+                    </div>
+
+                    <div class="text">
+                        <p>
+                            Zanima Vas cena, želite da se čujemo ili samo želite da se informišete?
+                            Slobodno mi se obratite a ja ću Vam pružiti sve neophodne informacije.
+                        </p>
                     </div>
                 </div>
 
-                <div class="text">
-                    <p>
-                        Slobodno mi se obratite koristeći obrazac ispod
-                        a ja ću Vam se javiti što je pre moguće.
-                    </p>
+                <div class="contact-phone">
+                    <div class="contact-phone__title">
+                        <div class="phone">
+                            <h3>Pozovite me</h3>
+                            <div class="arrow">
+                                <img width="22" height="18" src="assets/img/icons/arrows/arrow-right-white.webp" alt="White arrow">
+                            </div>
+                            <a href="tel:+381613116074">+381 61 311 60 74</a>
+                        </div>
+                        <span class="separator"></span>
+                        <h3>Ili me kontaktirajte putem obrasca ispod</h3>
+                    </div>
                 </div>
-            </div>
 
                 <!-- Contact section inner start --> 
                 <div class="contact__inner bg-white">
+
+                    <div class="contact__inner__title">
+                        
+                    </div>
 
                     <form id="contact-form" action="#" method="post">
 
