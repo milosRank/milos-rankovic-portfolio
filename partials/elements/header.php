@@ -22,7 +22,7 @@
                             <div class="links-holder__inner">
                                 <nav class="navigation-menu">
                                     <ul>
-                                        <li class="active-section">
+                                        <li>
                                             <a href="#services">Usluge</a>
                                         </li>
                                         <li>

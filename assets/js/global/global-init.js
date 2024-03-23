@@ -1,5 +1,5 @@
 // Global elements
-import { ROOT } from '../utils/dom-elements.js';
+import { ROOT, HEADER } from '../utils/dom-elements.js';
 
 // Class names
 import { class_iosDevice } from '../utils/dom-class-names.js';
