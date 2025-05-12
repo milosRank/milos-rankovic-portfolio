@@ -17,12 +17,9 @@
     scroll-margin-top: 150px;
 
     .heading {
+        margin-bottom: 50px;
 
         .title {
-
-            &:not(:last-child) {
-                margin-bottom: 5px;
-            }
 
             h1,
             h2,
@@ -30,22 +27,22 @@
             h4,
             h5,
             h6 {
-                font-size: 4rem;
-                line-height: 4.5rem;
+                font-size: vars.$fs-medium-large;
+                line-height: calc(vars.$fs-medium-large + 1rem);
                 margin-top: 0;
                 margin-bottom: 0;
             }
         }
-
-        .subtitle {
-            color: #758195
-        }
     }
 
-    .pricing__inner {
+    .text {
 
-        .section-cta {
-            margin-top: 70px;
+        & > *:first-child {
+            margin-top: 0;
+        }
+
+        & > *:last-child {
+            margin-bottom: 0;
         }
     }
 }
@@ -56,7 +53,7 @@
 
 @media(min-width: 992px) {
 
-    .pricing__inner {
+    .pricing__inner .cta-and-text {
         display: flex;
         align-items: center;
         gap: 70px;

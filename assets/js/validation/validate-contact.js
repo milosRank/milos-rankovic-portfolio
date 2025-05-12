@@ -8,7 +8,7 @@ if (CONTACT_FORM) {
         {
             key: 'Full name is required',
             dict: {
-                sr: 'Ime i prezime su obavenzni'
+                sr: 'Ime i prezime su obavezni'
             }
         },
         {

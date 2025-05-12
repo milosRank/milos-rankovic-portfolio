@@ -128,6 +128,7 @@ img {
     width: auto;
     height: auto;
 }
+
 section {
     position: relative;
 
@@ -191,6 +192,47 @@ section {
         position: relative;
         z-index: 3;
     }
+}
+
+blockquote {
+
+    & > img:first-child {
+        vertical-align: text-bottom;
+    }
+
+    & > img:last-child {
+        vertical-align: text-top;
+    }
+
+    // span {
+    //     position: relative;
+
+    //     &::before {
+    //         content: "";
+    //         display: inline-block;
+    //         width: 40px;
+    //         height: 35px;
+    //         position: absolute;
+    //         left: -30px;
+    //         top: -10px;
+    //         background-image: url("../../img/icons/quote-left-yellow.svg");
+    //         background-repeat: no-repeat;
+    //         background-size: cover;
+    //     }
+
+    //     &::after {
+    //         content: "";
+    //         display: inline-block;
+    //         width: 40px;
+    //         height: 35px;
+    //         position: absolute;
+    //         right: -30px;
+    //         bottom: -10px;
+    //         background-image: url("../../img/icons/quote-right-yellow.svg");
+    //         background-repeat: no-repeat;
+    //         background-size: cover;
+    //     }
+    // }
 }
 
 

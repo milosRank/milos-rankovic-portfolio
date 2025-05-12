@@ -67,7 +67,7 @@
                                     </filter>
                                 </defs>
                             </svg>
-                            <span class="letter">P</span><span class="letter">o</span><span class="letter">š</span><span class="letter">a</span><span class="letter">lj</span><span class="letter">i</span>
+                            <span class="letter">P</span><span class="letter">o</span><span class="letter">š</span><span class="letter">a</span><span class="letter">lj</span><span class="letter">i</span><span class="letter">t</span><span class="letter">e</span>
                             <span class="bubbles">
                                 <span class="bubble"></span>
                                 <span class="bubble"></span>

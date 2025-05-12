@@ -33,8 +33,8 @@ import { class_slider } from '../utils/dom-class-names.js';
             let sliderType = Number(slider.dataset.slidertype); // Type of slider
 
             // Slider controls
-            let sliderControlNext = slider.closest(".swiper-container")?.querySelector(`.${SLIDER_CLASES.control}.${SLIDER_CLASES.controlNext}`);
-            let sliderControlPrev = slider.closest(".swiper-container")?.querySelector(`.${SLIDER_CLASES.control}.${SLIDER_CLASES.controlPrev}`);
+            let sliderControlNext = slider.closest(".swiper-container")?.querySelector(`.${class_slider.control}.${class_slider.controlNext}`);
+            let sliderControlPrev = slider.closest(".swiper-container")?.querySelector(`.${class_slider.control}.${class_slider.controlPrev}`);
 
             switch (sliderType) {
 
@@ -44,7 +44,17 @@ import { class_slider } from '../utils/dom-class-names.js';
                         loop: true,
                         slidesPerView: 1,
                         spaceBetween: 0,
-                        effect: "fade",
+                        effect: "cards",
+                        breakpoints: {
+                            991: {
+                                slidesPerView: 2,
+                                spaceBetween: 30,
+                            }
+                        },
+                        navigation: {
+                            nextEl: sliderControlNext,
+                            prevEl: sliderControlPrev,
+                        },
                     }
 
                 break;

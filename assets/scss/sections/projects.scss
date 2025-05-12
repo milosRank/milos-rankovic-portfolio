@@ -37,15 +37,16 @@
 
     .box {
 
-        a {
-            display: inline-block;
+        .box__inner > a {
+            display: flex;
+            flex-direction: column;
+            height: 100%;
             text-decoration: none;
             color: vars.$text-primary-color;
 
             &:hover {
 
                 .featured-image {
-
                     .overlay {
                         opacity: 1;
                         transition: 0.3s ease;
@@ -82,31 +83,26 @@
             }
         }
 
+        .labels-wrapper-title {
+            margin-bottom: 10px;
+        }
+
         .labels-wrapper {
             display: flex;
             margin-bottom: 10px;
             font-size: 1.7rem;
+            flex-wrap: wrap;
+            gap: 10px;
 
             .label {
                 position: relative;
-
-                &:not(:last-child) {
-                    padding-right: 30px;
-
-                    &::before {
-                        @include vars.pseudo("", 5px, 5px, absolute);
-                        right: 15px;
-                        top: 52%;
-                        transform: translateY(-50%);
-                        display: inline-block;
-                        background-color: vars.$brand-fifth-color;
-                        border-radius: 50%;
-                    }
-                }
+                background-color: vars.$brand-fifth-color;
+                padding: 4px 10px;
             }
         }
 
         .title {
+            margin-bottom: auto;
 
             h1,
             h2,
@@ -130,16 +126,18 @@
 
         .project-information {
             display: flex;
+            flex-wrap: wrap;
+            gap: 30px;
 
             .information {
 
-                &:not(:last-child) {
-                    margin-right: 40px;
+                &.information.business-area {
+                    flex: 1 1 100%;
                 }
 
                 .title {
                     font-size: 1.7rem;
-                    margin-bottom: 20px;
+                    margin-bottom: 10px;
                 }
 
                 .value {
@@ -147,6 +145,10 @@
                     line-height: 3.5rem;
                 }
             }
+        }
+
+        .cta {
+            margin-top: 50px;
         }
     }
 }

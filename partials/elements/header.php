@@ -29,7 +29,7 @@
                                             <a href="#projects">Projekti</a>
                                         </li>
                                         <li>
-                                            <a href="#">Iskustva klijenata</a>
+                                            <a href="#testimonials">Iskustva klijenata</a>
                                         </li>
                                         <li>
                                             <a href="#pricing">Cenovnik</a>

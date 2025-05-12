@@ -1,5 +1,5 @@
 <!-- Pricing start -->
-<section class="pricing padding-top-0" id="pricing">
+<section class="pricing" id="pricing">
     <div class="container-fluid">
         <div class="wrapper">
             <div class="container narrow">
@@ -7,14 +7,15 @@
                 <!-- Pricing inner start -->
                 <div class="pricing__inner">
 
-                    <!-- Heading and text start -->
-                    <div class="heading-and-text">
-                        <div class="heading">
-                            <div class="title">
-                                <h2>Zanima Vas cenovnik usluga?</h2>
-                            </div>
-                            <div class="subtitle">Hajde da stupimo u kontakt.</div>
+                    <div class="heading">
+                        <div class="title">
+                            <h2>Zanima Vas cenovnik usluga?</h2>
                         </div>
+                        <div class="subtitle">Hajde da stupimo u kontakt.</div>
+                    </div>
+
+                    <!-- CTA and text start -->
+                    <div class="cta-and-text">
 
                         <div class="text">
                             <p>
@@ -24,12 +25,11 @@
                                 visokokvalitetne usluge prilagođene Vašim potrebama i budžetu. <strong>Svaka vrsta dogovora je moguća.</strong>
                             </p>
                         </div>
-                    </div> <!-- Heading and text end -->
+                        <div class="section-cta">
+                            <a href="#get-in-touch" class="button button-off--secondary">Saznajte cenu</a>
+                        </div>
 
-                    <!-- Section CTA start -->
-                    <div class="section-cta">
-                        <a href="#get-in-touch" class="button button-off--secondary">Saznajte cenu</a>
-                    </div> <!-- Section CTA end -->
+                    </div> <!-- CTA and text end -->
 
                 </div> <!-- CTA innert end -->
 
