@@ -45,6 +45,7 @@ import { SCREEN_LOCKER } from '../global/global.js';
             this.toSidebarBreakpoint = toSidebarBreakpoint;
             this.HTMLNavMenuElement = document.querySelector(navigationMenuSelector);
             this.toggler = document.querySelector(togglerSelector);
+            this.links = this.HTMLNavMenuElement.querySelectorAll("a");
 
             // Exit if there is no navigation menu
             if(!this.HTMLNavMenuElement) return;
@@ -114,11 +115,56 @@ import { SCREEN_LOCKER } from '../global/global.js';
 
     /**
      * Hides navigation menu when it transform to sidebar
+     * 
+     * @returns {Void}
      */
     NavigationMenu.prototype.hideNavMenuAsSidebar = function() {
 
         this.HTMLNavMenuElement?.classList.remove(NAV_MENU_CLASSES.active);
         this.toggler?.classList.remove(class_navMenu.buttonActive);
+
+    }
+
+
+    /**
+     * Sets active nav menu link
+     * 
+     * @param {HTMLElement} activeLink - link that will be set to active
+     * 
+     * @returns {Void}
+     */
+    NavigationMenu.prototype.setActiveLink = function(activeLink) {
+
+        this.links.forEach(link => link === activeLink ? link.closest("li").classList.add("active-section") : link.closest("li").classList.remove("active-section"));
+
+    }
+
+
+    /**
+     * Sets active nav menu link
+     * 
+     * @returns {Void}
+     */
+    NavigationMenu.prototype.setActiveLinkBasedOnSection = function() {
+
+        // Get distance brtween top of the screen and scrolled area
+        let fromTop = window.scrollY + 10;
+
+        this.links.forEach((link) => {
+
+            // If link has no has, exit
+            if(!link.hash) return;
+    
+            // Get li element that wrapps link
+            const LI = link.closest("li");
+    
+            // Get section related to link
+            let section = document.querySelector(link.hash);
+    
+            // Acivate link
+            (section.offsetTop - 150 <= fromTop && section.offsetTop - 150 + section.offsetHeight > fromTop) ? LI.classList.add("active-section") : LI.classList.remove("active-section");
+    
+        });
 
     }
 
@@ -130,14 +176,21 @@ import { SCREEN_LOCKER } from '../global/global.js';
      */
     NavigationMenu.prototype.attachEvents = function() {
 
-        // Call function on load
+        // *** Call functions on load ***
         this.toggleActiveSidebarClass();
+        this.setActiveLinkBasedOnSection();
 
         window.addEventListener("resize", () => {
 
             this.toggleActiveSidebarClass();
             SCREEN_LOCKER.isNavMenuActive = this.isNavMenuActiveAsSidebar();
-            
+
+        });
+
+        window.addEventListener("scrollend", () => {
+
+            this.setActiveLinkBasedOnSection();
+
         });
 
         if(this.toggler) {
@@ -151,6 +204,12 @@ import { SCREEN_LOCKER } from '../global/global.js';
             });
 
         }
+
+        this.links.forEach(link => {
+
+            link.addEventListener("click", () => this.setActiveLink(link));
+
+        });
 
     }
 

@@ -6,7 +6,8 @@
     "scripts": {
         "build-main": "sass assets/scss/main.scss --style=expanded --quiet | postcss --use autoprefixer --no-map > assets/css/build/main.css",
         "build-bootstrap": "sass assets/scss/bootstrap.scss --style=expanded --quiet | postcss --use autoprefixer --no-map > assets/css/bootstrap.css",
-        "build-all": "npm-run-all build-main build-bootstrap"
+        "build-swiper": "sass assets/scss/swiper.scss --style=expanded --quiet | postcss --use autoprefixer --no-map > assets/css/swiper.css",
+        "build-all": "npm-run-all build-main build-bootstrap build-swiper"
     },
     "repository": {
         "type": "git",
@@ -20,6 +21,7 @@
         "npm-run-all": "^4.1.5",
         "postcss": "^8.4.35",
         "postcss-cli": "^11.0.0",
-        "sass": "^1.70.0"
+        "sass": "^1.70.0",
+        "swiper": "^11.0.7"
     }
 }

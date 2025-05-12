@@ -24,14 +24,16 @@
                     <div class="boxes-holder">
                         <div class="boxes-holder__inner">
 
-                            <!-- Box start --> 
+                            <!-- Box start -->
                             <div class="box">
                                 <div class="box__inner">
-                                    <div class="icon">
-                                        <img src="./assets/img/icons/code-gradient.svg" alt="Code icon">
-                                    </div>
-                                    <div class="title">
-                                        <h3>Razvoj softvera</h3>    
+                                    <div class="icon-and-title-wrapper">
+                                        <div class="title">
+                                            <h3>Razvoj web sajta/aplikacije</h3>
+                                        </div>
+                                        <div class="icon">
+                                            <img src="./assets/img/icons/code-gradient.svg" alt="Code icon">
+                                        </div>
                                     </div>
 
                                     <div class="content">
@@ -44,14 +46,39 @@
                                 </div>
                             </div> <!-- Box end -->
 
-                            <!-- Box start --> 
+                            <!-- Box start -->
                             <div class="box">
                                 <div class="box__inner">
-                                    <div class="icon">
-                                        <img src="./assets/img/icons/paint-roller-gradient.svg" alt="Paint roller icon">
+                                    <div class="icon-and-title-wrapper">
+                                        <div class="title">
+                                            <h3>Održavanje web sajta/aplikacije</h3>
+                                        </div>
+                                        <div class="icon">
+                                            <img src="./assets/img/icons/screwdriver-wrench.svg" alt="Screwdriver and wrench icon">
+                                        </div>
                                     </div>
-                                    <div class="title">
-                                        <h3>Web i UI/UX dizajn</h3>    
+
+                                    <div class="content">
+                                        <p>
+                                            Redovno tehničko održavanje, ažuriranje sadržaja,
+                                            sigurnosne nadogradnje i optimizacija kako bi vaš sajt ili
+                                            aplikacija radili bezprekorno i bili uvek ažurni.
+                                        </p>
+                                    </div>
+                                </div>
+                            </div> <!-- Box end -->
+
+                            <!-- Box start -->
+                            <div class="box">
+                                <div class="box__inner">
+
+                                    <div class="icon-and-title-wrapper">
+                                        <div class="title">
+                                            <h3>Web i UI/UX dizajn</h3>
+                                        </div>
+                                        <div class="icon">
+                                            <img src="./assets/img/icons/paint-roller-gradient.svg" alt="Paint roller icon">
+                                        </div>
                                     </div>
 
                                     <div class="content">
@@ -62,14 +89,16 @@
                                 </div>
                             </div> <!-- Box end -->
 
-                            <!-- Box start --> 
+                            <!-- Box start -->
                             <div class="box">
                                 <div class="box__inner">
-                                    <div class="icon">
-                                        <img src="./assets/img/icons/seo-gradient.svg" alt="SEO icon">
-                                    </div>
-                                    <div class="title">
-                                        <h3>SEO</h3>
+                                    <div class="icon-and-title-wrapper">
+                                        <div class="title">
+                                            <h3>SEO</h3>
+                                        </div>
+                                        <div class="icon">
+                                            <img src="./assets/img/icons/seo-gradient.svg" alt="SEO icon">
+                                        </div>
                                     </div>
 
                                     <div class="content">
@@ -81,14 +110,16 @@
                                 </div>
                             </div> <!-- Box end -->
 
-                            <!-- Box start --> 
+                            <!-- Box start -->
                             <div class="box">
                                 <div class="box__inner">
-                                    <div class="icon">
-                                        <img src="./assets/img/icons/content-gradient.svg" alt="Content icon">
-                                    </div>
-                                    <div class="title">
-                                        <h3>Kreiranje sadražaja</h3>    
+                                    <div class="icon-and-title-wrapper">
+                                        <div class="title">
+                                            <h3>Kreiranje sadražaja</h3>
+                                        </div>
+                                        <div class="icon">
+                                            <img src="./assets/img/icons/content-gradient.svg" alt="Content icon">
+                                        </div>
                                     </div>
 
                                     <div class="content">

@@ -22,8 +22,8 @@
         &.not-cover {
 
             img {
-                top: 30%;
-                transform: rotate(-45deg);
+                top: 0;
+                transform: rotate(135deg);
             }
         }
 
@@ -81,9 +81,10 @@ html.dom-content-loaded {
     .hero-section {
 
         .section-bg-image {
-    
+
             &::after {
-                height: 0;
+                transform: scaleY(0);
+                transform-origin: bottom;
             }
         }
     }

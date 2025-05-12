@@ -22,17 +22,17 @@
                             <div class="links-holder__inner">
                                 <nav class="navigation-menu">
                                     <ul>
-                                        <li class="active-section">
+                                        <li>
                                             <a href="#services">Usluge</a>
                                         </li>
                                         <li>
                                             <a href="#projects">Projekti</a>
                                         </li>
                                         <li>
-                                            <a href="#">Iskustva klijenata</a>
+                                            <a href="#testimonials">Iskustva klijenata</a>
                                         </li>
                                         <li>
-                                            <a href="#">Cenovnik</a>
+                                            <a href="#pricing">Cenovnik</a>
                                         </li>
                                         <li>
                                             <a href="#get-in-touch">Kontakt</a>

@@ -1,5 +1,5 @@
 // Global elements
-import { ROOT } from '../utils/dom-elements.js';
+import { ROOT, HEADER } from '../utils/dom-elements.js';
 
 // Class names
 import { class_iosDevice } from '../utils/dom-class-names.js';
@@ -10,7 +10,7 @@ import { appendCSSVariable, getScrollbarWidth, isIOS, SCREEN_LOCKER, equalizeEle
 
 const appendScrollbarWidthAsCssVariable = () => appendCSSVariable.call(null, "scrollbarWidth", `${ getScrollbarWidth() }px`);
 
-const setServicesBoxesTitleHeightEqual = equalizeElementsHeight.bind(null, ".services .box .title", 767);
+const setServicesBoxesTitleHeightEqual = equalizeElementsHeight.bind(null, ".services .box .title", 991);
 
 // Load event
 window.addEventListener("load", function() {
