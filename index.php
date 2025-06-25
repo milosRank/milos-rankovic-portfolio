@@ -5,8 +5,6 @@
 
         <!-- Meta -->
         <?php include 'partials/resources/meta.php';?>
-        <meta name="description" content="" />
-        <meta name="keywords" content="" />
 
         <!-- PRELOAD -->
         <?php include 'partials/resources/preload.php';?>
@@ -17,7 +15,7 @@
         <!-- FAVICON -->
         <?php include 'partials/resources/favicon.php';?>
 
-        <title>Milos Rankovic Portfolio</title>
+        <title>Web dizajn Srbija - Izrada sajtova i SEO | Miloš Ranković</title>
 
     </head>
 

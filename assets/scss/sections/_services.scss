@@ -48,7 +48,6 @@
     }
 
     .box {
-        text-align: center;
         border: 2px solid #ebf0f4;
         padding: 40px;
 
@@ -151,6 +150,7 @@
     .services {
 
         .box {
+            text-align: center;
 
             .icon-and-title-wrapper {
                 justify-content: center;
@@ -162,7 +162,6 @@
         }
     }
 }
-
 
 @media(max-width: 767px) {
 
@@ -178,6 +177,19 @@
                 }
             }
         }
+
+        .heading .title {
+
+            h1,
+            h2,
+            h3,
+            h4,
+            h5,
+            h6 {
+                font-size: vars.$fs-large;
+                line-height: 5.5rem;
+            }
+        }
     }
 }
 
@@ -187,5 +199,18 @@
     .services {
         padding-top: 50px;
         padding-bottom: 50px;
+
+        .heading .title {
+
+            h1,
+            h2,
+            h3,
+            h4,
+            h5,
+            h6 {
+                font-size: vars.$fs-medium;
+                line-height: 4.5rem;
+            }
+        }
     }
 }

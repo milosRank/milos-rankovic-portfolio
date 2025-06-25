@@ -5,7 +5,7 @@ import { ROOT, HEADER } from '../utils/dom-elements.js';
 import { class_iosDevice } from '../utils/dom-class-names.js';
 
 // Global functions
-import { appendCSSVariable, getScrollbarWidth, isIOS, SCREEN_LOCKER, equalizeElementsHeight } from './global.js';
+import { appendCSSVariable, getScrollbarWidth, isIOS, SCREEN_LOCKER, equalizeElementsHeight, initMenuItemsScrollTo } from './global.js';
 
 
 const appendScrollbarWidthAsCssVariable = () => appendCSSVariable.call(null, "scrollbarWidth", `${ getScrollbarWidth() }px`);
@@ -26,6 +26,8 @@ window.addEventListener("load", function() {
     setServicesBoxesTitleHeightEqual();
 
     ROOT.classList.add("dom-content-loaded");
+
+    initMenuItemsScrollTo();
 
 });
 

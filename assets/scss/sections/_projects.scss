@@ -38,7 +38,7 @@
     .box {
 
         .box__inner > a {
-            display: flex;
+            display: inline-flex;
             flex-direction: column;
             height: 100%;
             text-decoration: none;
@@ -174,10 +174,48 @@
     }
 }
 
+@media(max-width: 767px) {
+
+    .projects {
+
+        .heading .title {
+
+            h1,
+            h2,
+            h3,
+            h4,
+            h5,
+            h6 {
+                font-size: vars.$fs-large;
+                line-height: 5.5rem;
+            }
+        }
+
+        .projects-list .project:not(:last-child) {
+            margin-bottom: 50px;
+            padding-bottom: 50px;
+            border-bottom: 1px solid vars.$brand-sixth-color;
+        }
+    }
+}
+
 @media(max-width: 575px) {
 
     .projects {
         padding-top: 50px;
         padding-bottom: 50px;
+
+            .heading .title {
+
+                h1,
+                h2,
+                h3,
+                h4,
+                h5,
+                h6 {
+                    font-size: vars.$fs-medium;
+                    line-height: 4.5rem;
+                }
+            }
     }
 }

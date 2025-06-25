@@ -223,3 +223,28 @@ export let scrollToElement = (element) => element.scrollIntoView({ behavior: "sm
  * @returns {Int} - Width of scrollbar in pixels
  */
 export const getScrollbarWidth = () => window.innerWidth - document.documentElement.clientWidth;
+
+
+/**
+ * Initializes the scroll to functionality of menu items
+ * 
+ * @returns {Int} - Width of scrollbar in pixels
+ */
+export const initMenuItemsScrollTo = () => {
+
+    const menuWrapper = document.querySelector(".scroll-to-menu-items");
+    const menuItems = menuWrapper?.querySelectorAll("a");
+
+    menuItems?.forEach(item => {
+
+        item.addEventListener("click", function(event) {
+
+            event.preventDefault();
+            let targetElement = document.querySelector(`${item.getAttribute("href")}`);
+            if(targetElement) scrollToElement(targetElement);
+
+        });
+
+    });
+
+}
