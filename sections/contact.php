@@ -13,8 +13,8 @@
 
                     <div class="text">
                         <p>
-                            Zanima Vas cena, želite da se čujemo ili samo želite da se informišete?
-                            Slobodno mi se obratite a ja ću Vam pružiti sve neophodne informacije.
+                            Bilo da vam treba kompletan veb sajt, redizajn postojećeg ili SEO optimizacija, ili samo želite da se informišete - obratite mi se.
+                            U što kraćem periodu ću Vam pružiti sve neophodne informacije.
                         </p>
                     </div>
                 </div>
@@ -83,7 +83,7 @@
                         </button>
                         </div>
                     </form>
-                    
+
                 </div> <!-- Contact section inner end -->
 
             </div>

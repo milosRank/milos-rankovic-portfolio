@@ -22,7 +22,10 @@
                                 Cene usluga variraju u skladu sa različitim faktorima
                                 kao što su obim projekta, specifični zahtevi klijenta, tehnički
                                 zahtevi i vreme potrebno za realizaciju. Cilj je pružiti
-                                visokokvalitetne usluge prilagođene Vašim potrebama i budžetu. <strong>Svaka vrsta dogovora je moguća.</strong>
+                                visokokvalitetne usluge prilagođene Vašim potrebama i budžetu. 
+                                <br><br>
+                                Ako tražite pouzdan web sajt, kontaktirajte me i dobićete jasnu i transparentnu ponudu, bez skrivenih troškova.
+                                <strong>Svaka vrsta dogovora je moguća.</strong>
                             </p>
                         </div>
                         <div class="section-cta">

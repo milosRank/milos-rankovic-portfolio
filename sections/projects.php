@@ -21,7 +21,7 @@
                         <div class="box__inner">
                             <a href="https://www.rmalkon.co.rs/" target="_blank">
                                 <div class="featured-image">
-                                    <img src="./assets/img/projects/rm-alcon/homepage.webp" width="" height="" alt="RM Alcon Homepage"/>
+                                    <img src="./assets/img/projects/rm-alcon/homepage.webp" width="599" height="270" alt="RM Alcon Homepage"/>
                                     <div class="overlay">
                                         <span>Posetite vebsajt</span>
                                     </div>
@@ -89,7 +89,7 @@
                         <div class="box__inner">
                             <a href="https://djdesignstudio.co/" target="_blank">
                                 <div class="featured-image">
-                                    <img src="./assets/img/projects/dj-design-studio/homepage.webp" width="" height="" alt="DJ Design Studio"/>
+                                    <img src="./assets/img/projects/dj-design-studio/homepage.webp" width="599" height="270" alt="DJ Design Studio"/>
                                     <div class="overlay">
                                         <span>Posetite vebsajt</span>
                                     </div>

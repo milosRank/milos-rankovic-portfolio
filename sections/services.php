@@ -38,9 +38,8 @@
 
                                     <div class="content">
                                         <p>
-                                            Visokokvalitetna izrada prilagodljivih veb sajtova, 
-                                            internet prodavnica, internet aplikacija, kao i 
-                                            implementacija raznih sistema za upravljanje sadržajem.
+                                            Izrada veb sajtova po meri - sa ili bez šablona. Od jednostavnih prezentacija
+                                            do kompleksnijih sistema. WordPress, HTML/CSS, prilagođeno vašem biznisu.
                                         </p>
                                     </div>
                                 </div>

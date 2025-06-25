@@ -11,8 +11,8 @@
                         <!-- Logo holder start -->
                         <div class="logo-holder">
                             <div class="logo-holder__inner">
-                                <a href="index.php" aria-label="Go to homepage of Milos Rankovic Portfolio" style="text-decoration: none;">
-                                    <span style="font-family: 'primary-semi-bold'; font-size:10rem;line-height: 10rem; color: white;">MR</span>
+                                <a href="./" aria-label="Go to homepage of Milos Rankovic Portfolio" style="text-decoration: none;">
+                                    <img src="./assets/img/logos/mrcode-logo.webp" alt="" width="120">
                                 </a>
                             </div>
                         </div> <!-- Logo holder end -->
@@ -20,7 +20,7 @@
                         <!-- Links holder start -->
                         <div class="links-holder">
                             <div class="links-holder__inner">
-                                <nav class="navigation-menu">
+                                <nav class="navigation-menu scroll-to-menu-items">
                                     <ul>
                                         <li>
                                             <a href="#services">Usluge</a>

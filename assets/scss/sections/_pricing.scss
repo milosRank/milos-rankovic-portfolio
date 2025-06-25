@@ -65,3 +65,43 @@
         }
     }
 }
+
+@media(max-width: 767px) {
+
+    .pricing {
+
+        .heading .title {
+
+            h1,
+            h2,
+            h3,
+            h4,
+            h5,
+            h6 {
+                font-size: vars.$fs-large;
+                line-height: 5.5rem;
+            }
+        }
+    }
+}
+
+@media(max-width:575px) {
+
+    .pricing {
+        padding-top: 50px;
+        padding-bottom: 50px;
+
+        .heading .title {
+
+            h1,
+            h2,
+            h3,
+            h4,
+            h5,
+            h6 {
+                font-size: vars.$fs-medium;
+                line-height: 4.5rem;
+            }
+        }
+    }
+}

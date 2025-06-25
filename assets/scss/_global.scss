@@ -196,6 +196,9 @@ section {
 
 blockquote {
 
+    border-radius: 12px;
+    font-style: italic;
+
     & > img:first-child {
         vertical-align: text-bottom;
     }
@@ -203,36 +206,15 @@ blockquote {
     & > img:last-child {
         vertical-align: text-top;
     }
+}
 
-    // span {
-    //     position: relative;
-
-    //     &::before {
-    //         content: "";
-    //         display: inline-block;
-    //         width: 40px;
-    //         height: 35px;
-    //         position: absolute;
-    //         left: -30px;
-    //         top: -10px;
-    //         background-image: url("../../img/icons/quote-left-yellow.svg");
-    //         background-repeat: no-repeat;
-    //         background-size: cover;
-    //     }
-
-    //     &::after {
-    //         content: "";
-    //         display: inline-block;
-    //         width: 40px;
-    //         height: 35px;
-    //         position: absolute;
-    //         right: -30px;
-    //         bottom: -10px;
-    //         background-image: url("../../img/icons/quote-right-yellow.svg");
-    //         background-repeat: no-repeat;
-    //         background-size: cover;
-    //     }
-    // }
+.bg-dark-grey blockquote {
+    margin-left: 0;
+    margin-right: 0;
+    padding: 25px 20px;
+    background-color: vars.$white;
+    color: vars.$text-primary-color;
+    font-size: 1.6rem;
 }
 
 
