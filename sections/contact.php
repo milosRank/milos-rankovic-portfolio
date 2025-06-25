@@ -40,7 +40,7 @@
                         
                     </div>
 
-                    <form id="contact-form" action="#" method="post">
+                    <form id="contact-form" method="post" action="#">
 
                         <div class="column-wrapper">
                             <div class="input-wrapper">
@@ -57,30 +57,34 @@
                             <label for="message">Poruka *</label>
                         </div>
                         <div class="cta-wrapper">
-                        <button type="submit" class="button button-bubbles--tertiary">
-                            <svg xmlns="http://www.w3.org/2000/svg" version="1.1">
-                                <defs>
-                                    <filter id="gooey">
-                                        <feGaussianBlur in="SourceGraphic" stdDeviation="5" result="blur"></feGaussianBlur>
-                                        <feColorMatrix in="blur" type="matrix" values="1 0 0 0 0  0 1 0 0 0  0 0 1 0 0  0 0 0 19 -9" result="highContrastGraphic"></feColorMatrix>
-                                        <feComposite in="SourceGraphic" in2="highContrastGraphic" operator="atop"></feComposite>
-                                    </filter>
-                                </defs>
-                            </svg>
-                            <span class="letter">P</span><span class="letter">o</span><span class="letter">š</span><span class="letter">a</span><span class="letter">lj</span><span class="letter">i</span><span class="letter">t</span><span class="letter">e</span>
-                            <span class="bubbles">
-                                <span class="bubble"></span>
-                                <span class="bubble"></span>
-                                <span class="bubble"></span>
-                                <span class="bubble"></span>
-                                <span class="bubble"></span>
-                                <span class="bubble"></span>
-                                <span class="bubble"></span>
-                                <span class="bubble"></span>
-                                <span class="bubble"></span>
-                                <span class="bubble"></span>
-                            </span>
-                        </button>
+                            <button type="submit" class="button button-bubbles--tertiary">
+                                <svg xmlns="http://www.w3.org/2000/svg" version="1.1">
+                                    <defs>
+                                        <filter id="gooey">
+                                            <feGaussianBlur in="SourceGraphic" stdDeviation="5" result="blur"></feGaussianBlur>
+                                            <feColorMatrix in="blur" type="matrix" values="1 0 0 0 0  0 1 0 0 0  0 0 1 0 0  0 0 0 19 -9" result="highContrastGraphic"></feColorMatrix>
+                                            <feComposite in="SourceGraphic" in2="highContrastGraphic" operator="atop"></feComposite>
+                                        </filter>
+                                    </defs>
+                                </svg>
+                                <span class="letter">P</span><span class="letter">o</span><span class="letter">š</span><span class="letter">a</span><span class="letter">lj</span><span class="letter">i</span><span class="letter">t</span><span class="letter">e</span>
+                                <span class="bubbles">
+                                    <span class="bubble"></span>
+                                    <span class="bubble"></span>
+                                    <span class="bubble"></span>
+                                    <span class="bubble"></span>
+                                    <span class="bubble"></span>
+                                    <span class="bubble"></span>
+                                    <span class="bubble"></span>
+                                    <span class="bubble"></span>
+                                    <span class="bubble"></span>
+                                    <span class="bubble"></span>
+                                </span>
+                                <span class="spinner"></span>
+                            </button>
+                        </div>
+
+                        <div id="submit-message">
                         </div>
                     </form>
 

@@ -17,3 +17,9 @@ desktop.ini
 # Ignore Node modules
 node_modules
 package-lock.json
+
+# Ignore .env
+.env
+
+# Ignore vendor
+vendor

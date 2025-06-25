@@ -11,3 +11,4 @@
 <script src="assets/js/validation/validate-contact.js"></script>
 <script src="assets/js/slider/swiper-bundle.min.js"></script>
 <script src="assets/js/slider/slider-init.js" type="module"></script>
+<script src="assets/js/email/send-email.js" type="module"></script>

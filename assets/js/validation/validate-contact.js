@@ -75,6 +75,10 @@ if (CONTACT_FORM) {
                 }
             ]
         );
+
+        contactValidation.onSuccess((event) => {
+            event.preventDefault();
+        });
 }
 
 
