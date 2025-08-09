@@ -9,6 +9,9 @@ use Dotenv\Dotenv;
 // Load .env variables
 $dotenv = Dotenv::createImmutable(__DIR__ . '/../');
 $dotenv->load();
+header('Content-Type: application/json');
+
+$response = new stdClass();
 
 // Server validation
 if ($_SERVER['REQUEST_METHOD'] === 'POST') {
@@ -25,6 +28,7 @@ if ($_SERVER['REQUEST_METHOD'] === 'POST') {
     $mail = new PHPMailer(true);
 
     try {
+
         // SMTP settings from .env file
         $mail->isSMTP();
         $mail->Host       = $_ENV['MAIL_HOST'];
@@ -43,12 +47,26 @@ if ($_SERVER['REQUEST_METHOD'] === 'POST') {
         $mail->Body    = "Ime: $full_name\nEmail: $email\n\nPoruka:\n$message";
 
         $mail->send();
-        echo "Hvala vam na poruci! Vaš upit je uspešno primljen. Možete očekivati odgovor u najkraćem mogućem roku.";
+
+        $response->msg = "Hvala vam na poruci! Vaš upit je uspešno primljen. Možete očekivati odgovor u najkraćem mogućem roku.";
+        $response->status = "success";
+        echo json_encode($response);
+        exit;
+
     } catch (Exception $e) {
+
         http_response_code(500);
-        echo "Došlo je do greške pri slanju poruke: {$mail->ErrorInfo}. Molimo pokušajte ponovo.";
+
+        $response->msg = "Došlo je do greške pri slanju poruke. Molimo pokušajte ponovo.";
+        $response->status = "fail";
+        echo json_encode($response);
+        exit;
+
     }
 } else {
     http_response_code(405);
-    echo "Nedozvoljena metoda zahteva.";
+    $response->msg = "Nedozvoljena metoda zahteva.";
+    $response->status = "fail";
+    echo json_encode($response);
+    exit;
 }

@@ -32,6 +32,11 @@ button,
     &:hover {
         transition: 0.3s ease;
     }
+
+    &[disabled='true'] {
+        opacity: 0.7;
+        cursor: not-allowed;
+    }
 }
 
 a.button:hover {
@@ -213,6 +218,11 @@ a.button:hover {
 
 .button-bubbles--primary {
     @extend .button--bubbles;
+    color: vars.$white;
+
+    &:hover {
+        color: vars.$brand-primary-color;
+    }
 }
 
 .button-bubbles--secondary {

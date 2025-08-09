@@ -29,29 +29,49 @@ window.addEventListener("load", function () {
             method: 'POST',
             body: formData
         })
-        .then(response => response.text())
-        .then(text => {
+        .then(response => {
 
-            messageContainer.innerHTML = text;
-            messageContainer.classList.add("success");
-            messageContainer.classList.remove("error");
-            scrollToElement(messageContainer);
+            submitButton.removeAttribute("disabled");
+
+            let parsedResponse = JSON.parse(response);
+            // if(!text) return;
+            console.log(parsedResponse)
+
+            parsedResponse.status == "fail" ? handleFail(parsedResponse) : handleSuccess(parsedResponse);
+            return parsedResponse;
 
         })
-        .catch(() => {
-
-            messageContainer.innerText = 'Greška se dogodila. Molimo Vas pokušajte ponovo.';
-            messageContainer.classList.add("error");
-            messageContainer.classList.remove("success");
-            scrollToElement(messageContainer);
-            submitButton.setAttribute("disabled", false);
+        .catch(error => {
+            console.log(error);
+            // let parsedResponse = JSON.parse(error);
+            // handleFail(parsedResponse);
 
         })
         .finally(() => {
-            spinner.style.display = 'none';
             spinner.classList.remove("show");
         });
 
     });
+
+
+    const handleSuccess = (response) => {
+
+        messageContainer.innerHTML = response.msg;
+        messageContainer.classList.add("success");
+        messageContainer.classList.remove("error");
+        scrollToElement(messageContainer);
+
+    }
+
+
+    const handleFail = (response) => {
+
+        messageContainer.innerText = response.msg;
+        messageContainer.classList.add("error");
+        messageContainer.classList.remove("success");
+        scrollToElement(messageContainer);
+        submitButton.removeAttribute("disabled");
+
+    }
 
 });
