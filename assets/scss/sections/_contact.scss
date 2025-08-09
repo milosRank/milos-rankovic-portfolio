@@ -113,6 +113,50 @@
             }
         }
     }
+
+    #submit-message.success {
+        padding: 20px 20px 20px 60px;
+        border: 2px solid vars.$brand-tertiary-color;
+        margin-top: 60px;
+        position: relative;
+
+        &::before {
+            content: "";
+            width: 30px;
+            height: 30px;
+            position: absolute;
+            left: 10px;
+            top: 20px;
+            background-image: url("../../img/icons/check-solid.svg");
+            background-size: 20px auto;
+            background-repeat: no-repeat;
+            background-position: center;
+            background-color: vars.$brand-tertiary-color;
+            border-radius: 50%;
+        }
+    }
+
+    #submit-message.error {
+        padding: 20px 20px 20px 60px;
+        border: 2px solid #AF0606;
+        margin-top: 60px;
+        position: relative;
+
+        &::before {
+            content: "";
+            width: 30px;
+            height: 30px;
+            position: absolute;
+            left: 10px;
+            top: 20px;
+            background-image: url("../../img/icons/xmark-solid.svg");
+            background-size: 20px auto;
+            background-repeat: no-repeat;
+            background-position: center;
+            background-color: #AF0606;
+            border-radius: 50%;
+        }
+    }
 }
 
 
@@ -190,5 +234,24 @@
                 }
             }
         }
+    }
+}
+
+@media(max-width: 450px) {
+
+    .contact {
+
+        #submit-message.success,
+        #submit-message.error {
+            padding-left: 20px;
+            font-size: 16px;
+
+            &::before {
+                position: initial;
+                display: block;
+                margin-bottom: 20px;
+            }
+        }
+        
     }
 }
