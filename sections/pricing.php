@@ -9,9 +9,9 @@
 
                     <div class="heading">
                         <div class="title">
-                            <h2>Zanima Vas cenovnik usluga?</h2>
+                            <h2>Cene po meri Vaših potreba.</h2>
                         </div>
-                        <div class="subtitle">Hajde da stupimo u kontakt.</div>
+                        <div class="subtitle">Zanima Vas cenovnik usluga? Hajde da stupimo u kontakt.</div>
                     </div>
 
                     <!-- CTA and text start -->
@@ -19,12 +19,9 @@
 
                         <div class="text">
                             <p>
-                                Cene usluga variraju u skladu sa različitim faktorima
-                                kao što su obim projekta, specifični zahtevi klijenta, tehnički
-                                zahtevi i vreme potrebno za realizaciju. Cilj je pružiti
-                                visokokvalitetne usluge prilagođene Vašim potrebama i budžetu. 
+                                <strong>Bez obzira na obim projekta ili budžet</strong>, možemo napraviti funkcionalano i pouzdano rešenje koji odgovara baš Vama.
+                                Kontaktirajte nas za jasnu i fer ponudu - bez skrivenih troškova.
                                 <br><br>
-                                Ako tražite pouzdan web sajt, kontaktirajte me i dobićete jasnu i transparentnu ponudu, bez skrivenih troškova.
                                 <strong>Svaka vrsta dogovora je moguća.</strong>
                             </p>
                         </div>

@@ -20,9 +20,13 @@ if ($_SERVER['REQUEST_METHOD'] === 'POST') {
     $message   = filter_input(INPUT_POST, 'message', FILTER_SANITIZE_FULL_SPECIAL_CHARS);
 
     if (!$full_name || !$email || !$message) {
-        // http_response_code(400);
-        // echo "Sva polja su obavezna i moraju biti ispravno popunjena.";
+
+        http_response_code(400);
+        $response->msg = "Sva polja su obavezna i moraju biti ispravno popunjena.";
+        $response->status = "fail";
+        echo json_encode($response);
         exit;
+
     }
 
     $mail = new PHPMailer(true);
