@@ -15,14 +15,15 @@ $response = new stdClass();
 
 // Server validation
 if ($_SERVER['REQUEST_METHOD'] === 'POST') {
-    $full_name = filter_input(INPUT_POST, 'full_name', FILTER_SANITIZE_FULL_SPECIAL_CHARS);
-    $email     = filter_input(INPUT_POST, 'email', FILTER_VALIDATE_EMAIL);
-    $message   = filter_input(INPUT_POST, 'message', FILTER_SANITIZE_FULL_SPECIAL_CHARS);
+    $full_name      = filter_input(INPUT_POST, 'full_name', FILTER_SANITIZE_FULL_SPECIAL_CHARS);
+    $email          = filter_input(INPUT_POST, 'email', FILTER_VALIDATE_EMAIL);
+    $phone_number = filter_input(INPUT_POST, 'phone_number', FILTER_SANITIZE_FULL_SPECIAL_CHARS);
+    $message        = filter_input(INPUT_POST, 'message', FILTER_SANITIZE_FULL_SPECIAL_CHARS);
 
     if (!$full_name || !$email || !$message) {
 
         http_response_code(400);
-        $response->msg = "Sva polja su obavezna i moraju biti ispravno popunjena.";
+        $response->msg = "Polja ime i prezime, email, i poruka su obavezna i moraju biti ispravno popunjena.";
         $response->status = "fail";
         echo json_encode($response);
         exit;
@@ -48,7 +49,7 @@ if ($_SERVER['REQUEST_METHOD'] === 'POST') {
 
         $mail->isHTML(false);
         $mail->Subject = "Upit sa kontakt forme";
-        $mail->Body    = "Ime: $full_name\nEmail: $email\n\nPoruka:\n$message";
+        $mail->Body    = "Ime: $full_name\nEmail: $email\nBroj telefona:\n$phone_number\n\nPoruka:\n$message\n";
 
         $mail->send();
 

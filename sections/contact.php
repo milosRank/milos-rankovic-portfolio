@@ -44,12 +44,18 @@
 
                         <div class="column-wrapper">
                             <div class="input-wrapper">
-                                <input id="full_name" type="text" name="full_name">
+                                <input id="full_name" type="text" name="full_name" />
                                 <label for="full_name">Ime i prezime *</label>
                             </div>
                             <div class="input-wrapper">
-                                <input id="email" type="email" name="email">
+                                <input id="email" type="email" name="email" />
                                 <label for="email">Email *</label>
+                            </div>
+                        </div>
+                        <div class="column-wrapper">
+                            <div class="input-wrapper">
+                                <input id="phone_number" type="tel" name="phone_number" />
+                                <label for="phone_number">Broj telefona</label>
                             </div>
                         </div>
                         <div class="input-wrapper">

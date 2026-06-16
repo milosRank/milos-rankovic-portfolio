@@ -20,7 +20,7 @@
                         <div class="text">
                             <p>
                                 <strong>Bez obzira na obim projekta ili budžet</strong>, možemo napraviti funkcionalano i pouzdano rešenje koji odgovara baš Vama.
-                                Kontaktirajte nas za jasnu i fer ponudu - bez skrivenih troškova.
+                                Kontaktirajte me za jasnu i fer ponudu - bez skrivenih troškova.
                                 <br><br>
                                 <strong>Svaka vrsta dogovora je moguća.</strong>
                             </p>
