@@ -10,14 +10,14 @@
 <!-- Open Graph / Facebook -->
 <meta property="og:type" content="website" />
 <meta property="og:url" content="https://thewebwave.net/" />
-<meta property="og:title" content="Web dizajn i izrada sajtova | Miloš Ranković" />
+<meta property="og:title" content="Web dizajn i izrada sajtova" />
 <meta property="og:description" content="Pogledajte portfolio i saznajte kako pomažem biznisima da unaprede online prisustvo kroz moderan dizajn i SEO." />
 <meta property="og:image" content="https://thewebwave.net/img/og-preview.jpg" />
 
 <!-- Twitter -->
 <meta name="twitter:card" content="summary_large_image" />
 <meta name="twitter:url" content="https://thewebwave.net/" />
-<meta name="twitter:title" content="Web dizajn i izrada sajtova | Miloš Ranković" />
+<meta name="twitter:title" content="Web dizajn i izrada sajtova" />
 <meta name="twitter:description" content="Kreiram sajtove koji rade za vas - SEO, dizajn, održavanje i još mnogo toga." />
 <meta name="twitter:image" content="https://thewebwave.net/img/og-preview.jpg" />
 
