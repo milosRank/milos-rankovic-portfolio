@@ -30,6 +30,7 @@
                                 <div class="labels-wrapper">
                                     <div class="label service">Kreiranje Dizajna</div>
                                     <div class="label service">Razvoj Vebsajta</div>
+                                    <div class="label service">Održavanje Vebsajta</div>
                                 </div>
 
                                 <div class="title">
@@ -57,6 +58,75 @@
                             </a>
                             <div class="cta">
                                 <a href="https://www.rmalkon.co.rs/" target="_blank" class="button button-bubbles--primary">
+                                    <svg xmlns="http://www.w3.org/2000/svg" version="1.1">
+                                        <defs>
+                                            <filter id="gooey">
+                                                <feGaussianBlur in="SourceGraphic" stdDeviation="5" result="blur"></feGaussianBlur>
+                                                <feColorMatrix in="blur" type="matrix" values="1 0 0 0 0  0 1 0 0 0  0 0 1 0 0  0 0 0 19 -9" result="highContrastGraphic"></feColorMatrix>
+                                                <feComposite in="SourceGraphic" in2="highContrastGraphic" operator="atop"></feComposite>
+                                            </filter>
+                                        </defs>
+                                    </svg>
+                                    Pregledajte
+                                    <span class="bubbles">
+                                        <span class="bubble"></span>
+                                        <span class="bubble"></span>
+                                        <span class="bubble"></span>
+                                        <span class="bubble"></span>
+                                        <span class="bubble"></span>
+                                        <span class="bubble"></span>
+                                        <span class="bubble"></span>
+                                        <span class="bubble"></span>
+                                        <span class="bubble"></span>
+                                        <span class="bubble"></span>
+                                    </span>
+                                </a>
+                            </div>
+                        </div>
+                    </div> <!-- Project end -->
+
+                    <!-- Project start -->
+                    <div class="project box">
+                        <div class="box__inner">
+                            <a href="https://office.intimolabwaer.com/" target="_blank">
+                                <div class="featured-image">
+                                    <img src="./assets/img/projects/intimo-lab-wear/catalog.webp" width="599" height="270" alt="Intimo Lab Wear Catalog"/>
+                                    <div class="overlay">
+                                        <span>Posetite vebsajt</span>
+                                    </div>
+                                </div>
+
+                                <div class="labels-wrapper">
+                                    <div class="label service">Odabir i implementacija teme</div>
+                                    <div class="label service">Razvoj Vebsajta</div>
+                                    <div class="label service">Implementacija E-commerce sistema</div>
+                                </div>
+
+                                <div class="title">
+                                    <h3>Intimo Lab Wear</h3>
+                                </div>
+
+                                <div class="separator"></div>
+
+                                <div class="project-information">
+                                    <div class="information business-area">
+                                        <div class="title">Oblast poslovanja</div>
+                                        <div class="value">Prodaja odeće</div>
+                                    </div>
+
+                                    <div class="information company-size">
+                                        <div class="title">Veličina kompanije</div>
+                                        <div class="value">5+</div>
+                                    </div>
+
+                                    <div class="information pages-created">
+                                        <div class="title">Broj stranica</div>
+                                        <div class="value">10+</div>
+                                    </div>
+                                </div>
+                            </a>
+                            <div class="cta">
+                                <a href="https://office.intimolabwaer.com/" target="_blank" class="button button-bubbles--primary">
                                     <svg xmlns="http://www.w3.org/2000/svg" version="1.1">
                                         <defs>
                                             <filter id="gooey">

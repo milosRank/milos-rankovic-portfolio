@@ -39,7 +39,7 @@
                                     <div class="content">
                                         <p>
                                             Izrada veb sajtova po meri - sa ili bez šablona. Od jednostavnih prezentacija
-                                            do kompleksnijih sistema. WordPress, HTML/CSS, prilagođeno vašem biznisu.
+                                            do kompleksih e-commerce sistema. WordPress, HTML/CSS, prilagođeno vašem biznisu.
                                         </p>
                                     </div>
                                 </div>
@@ -61,7 +61,7 @@
                                         <p>
                                             Redovno tehničko održavanje, ažuriranje sadržaja,
                                             sigurnosne nadogradnje i optimizacija kako bi vaš sajt ili
-                                            aplikacija radili bezprekorno i bili uvek ažurni.
+                                            aplikacija radili besprekorno i bili uvek ažurni.
                                         </p>
                                     </div>
                                 </div>
@@ -102,7 +102,7 @@
 
                                     <div class="content">
                                         <p>
-                                            Optimizacija Vaše online prisutnost. Postignite bolje
+                                            Osnovna optimizacija Vaše online prisutnost. Postignite bolje
                                             rangiranje na pretraživačima i privucite više ciljane publike.
                                         </p>
                                     </div>

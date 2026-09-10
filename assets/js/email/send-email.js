@@ -18,33 +18,43 @@ window.addEventListener("load", function () {
      */
     contactForm.addEventListener('submit', function (e) {
 
-        e.preventDefault(); // Prevent default form submission (page reload)
+        // e.preventDefault(); // Prevent default form submission (page reload)
         submitButton.setAttribute("disabled", true);
         spinner.classList.add("show");
 
         const form = e.target;
         const formData = new FormData(form);
 
+        // Check if client-side validation is passed.
+        // If not, only then go to the served-side validation.
+        if(!contactValidation.isValid) {
+
+            spinner.classList.remove("show");
+            submitButton.removeAttribute("disabled");
+            return;
+
+        }
+
         fetch('email/send-email.php', {
             method: 'POST',
             body: formData
         })
-        .then(response => {
+        .then(async response => {
 
             submitButton.removeAttribute("disabled");
+            const parsedResponse = await response.json();
 
-            let parsedResponse = JSON.parse(response);
-            // if(!text) return;
-            console.log(parsedResponse)
+            if (!response.ok || parsedResponse.status === "fail") {
+                handleFail(parsedResponse);
+            } else {
+                handleSuccess(parsedResponse);
+            }
 
-            parsedResponse.status == "fail" ? handleFail(parsedResponse) : handleSuccess(parsedResponse);
             return parsedResponse;
 
         })
         .catch(error => {
             console.log(error);
-            // let parsedResponse = JSON.parse(error);
-            // handleFail(parsedResponse);
 
         })
         .finally(() => {
@@ -54,6 +64,17 @@ window.addEventListener("load", function () {
     });
 
 
+    /**
+     * Handles a successful server response after form submission.
+     * Updates the message container with the success message, applies styling,
+     * and scrolls the viewport to the message container.
+     *
+     * @param {Object} response - The server response object.
+     * @param {string} response.msg - The success message to display.
+     * @param {string} response.status - The status of the response (should be "success").
+     * 
+     * @returns {Void}
+     */
     const handleSuccess = (response) => {
 
         messageContainer.innerHTML = response.msg;
@@ -61,9 +82,20 @@ window.addEventListener("load", function () {
         messageContainer.classList.remove("error");
         scrollToElement(messageContainer);
 
-    }
+    };
 
 
+    /**
+     * Handles a failed server response after form submission.
+     * Updates the message container with the error message, applies styling,
+     * scrolls the viewport to the message container, and re-enables the submit button.
+     * 
+     * @returns {Void}
+     *
+     * @param {Object} response - The server response object.
+     * @param {string} response.msg - The error message to display.
+     * @param {string} response.status - The status of the response (should be "fail").
+     */
     const handleFail = (response) => {
 
         messageContainer.innerText = response.msg;
@@ -72,6 +104,6 @@ window.addEventListener("load", function () {
         scrollToElement(messageContainer);
         submitButton.removeAttribute("disabled");
 
-    }
+    };
 
 });

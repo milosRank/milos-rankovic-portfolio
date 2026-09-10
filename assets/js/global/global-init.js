@@ -12,6 +12,8 @@ const appendScrollbarWidthAsCssVariable = () => appendCSSVariable.call(null, "sc
 
 const setServicesBoxesTitleHeightEqual = equalizeElementsHeight.bind(null, ".services .box .title", 991);
 
+const setProjectTagsHeightEqual = equalizeElementsHeight.bind(null, ".projects .labels-wrapper", 767);
+
 // Load event
 window.addEventListener("load", function() {
 
@@ -24,6 +26,8 @@ window.addEventListener("load", function() {
     appendScrollbarWidthAsCssVariable();
 
     setServicesBoxesTitleHeightEqual();
+
+    setProjectTagsHeightEqual();
 
     ROOT.classList.add("dom-content-loaded");
 
@@ -41,5 +45,7 @@ window.addEventListener("resize", function() {
     appendScrollbarWidthAsCssVariable();
 
     setServicesBoxesTitleHeightEqual();
+
+    setProjectTagsHeightEqual();
 
 });

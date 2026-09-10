@@ -13,7 +13,7 @@
 
                     <div class="text">
                         <p>
-                            Bilo da vam treba kompletan veb sajt, redizajn postojećeg ili SEO optimizacija, ili samo želite da se informišete - obratite mi se.
+                            Bilo da vam treba kompletan veb sajt, redizajn ili održavanje postojećeg, SEO optimizacija, ili samo želite da se informišete - obratite mi se.
                             U što kraćem periodu ću Vam pružiti sve neophodne informacije.
                         </p>
                     </div>
@@ -44,12 +44,18 @@
 
                         <div class="column-wrapper">
                             <div class="input-wrapper">
-                                <input id="full_name" type="text" name="full_name">
+                                <input id="full_name" type="text" name="full_name" />
                                 <label for="full_name">Ime i prezime *</label>
                             </div>
                             <div class="input-wrapper">
-                                <input id="email" type="email" name="email">
+                                <input id="email" type="email" name="email" />
                                 <label for="email">Email *</label>
+                            </div>
+                        </div>
+                        <div class="column-wrapper">
+                            <div class="input-wrapper">
+                                <input id="phone_number" type="tel" name="phone_number" />
+                                <label for="phone_number">Broj telefona</label>
                             </div>
                         </div>
                         <div class="input-wrapper">

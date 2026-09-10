@@ -9,7 +9,7 @@
                         <h2>Iskustva klijenata</h2>
                     </div>
                     <div class="subtitle">
-                        Pogledajte šta naši klijenti kažu o saradnji, usluzi i postignutim rezultatima.
+                        Pogledajte šta klijenti kažu o saradnji, usluzi i postignutim rezultatima.
                     </div>
                 </div>
 
@@ -43,40 +43,13 @@
                                             <h3>Ljubiša Rundić</h3>
                                         </div>
                                         <div class="position">Vlasnik i Generalni Menadzer</div>
-                                        <div class="project">RM Alcon Stahl</div>
+                                        <div class="project">
+                                            <a href="https://www.rmalkon.co.rs/" target="_blanc">RM Alcon Stahl</a>
+                                        </div>
                                         <blockquote>
                                             „Radili smo kompletno novi sajt za firmu i sve što smo zamislili -
                                             Miloš je uspeo da realizuje. Bio je veoma precizan, organizovan
                                             i uvek dostupan kad je trebalo nešto da se razjasni ili izmeni.“
-                                        </blockquote>
-                                    </div>
-                                </div>
-
-                            </div> <!-- Slider container end -->
-
-                        </div> <!-- Swiper slide end -->
-
-                        <!-- Swiper slide start -->
-                        <div class="swiper-slide">
-
-                            <!-- Slider container start -->
-                            <div class="slider-container">
-
-                                <div class="slider__inner">
-                                    <div class="image">
-                                        <img width="400" height="267" src="./assets/img/projects/dj-design-studio/people/jovana-marinkovic.webp" alt="Jovana Marinković Profilna Slika">
-                                    </div>
-
-                                    <div class="content">
-                                        <div class="title">
-                                            <h3>Jovana Marinković</h3>
-                                        </div>
-                                        <div class="position">Suvlasnik</div>
-                                        <div class="project">DJ Design Studio</div>
-                                        <blockquote>
-                                            „Miloš nam je pravio sajt i sve je prošlo baš glatko. Slušao je naše
-                                            ideje, predlagao pametna rešenja i sve ispoštovao u roku.
-                                            Sajt izgleda moderno, a nama se javlja sve više novih klijenata.“
                                         </blockquote>
                                     </div>
                                 </div>
@@ -101,11 +74,75 @@
                                             <h3>Darko Marinković</h3>
                                         </div>
                                         <div class="position">Suvlasnik</div>
-                                        <div class="project">DJ Design Studio</div>
+                                        <div class="project">
+                                            <a href="https://djdesignstudio.co/" target="_blanc">DJ Design Studio</a>
+                                        </div>
                                         <blockquote>
                                             „U početku smo bili malo skeptični jer nismo znali kako ceo taj proces ide,
                                             ali Miloš nam je sve objasnio, strpljivo radio sa nama i svaki detalj
                                             doterao do kraja. Sada imamo sajt na koji smo baš ponosni.“
+                                        </blockquote>
+                                    </div>
+                                </div>
+
+                            </div> <!-- Slider container end -->
+
+                        </div> <!-- Swiper slide end -->
+
+                        <!-- Swiper slide start -->
+                        <div class="swiper-slide">
+
+                            <!-- Slider container start -->
+                            <div class="slider-container">
+
+                                <div class="slider__inner">
+                                    <div class="image">
+                                        <img width="400" height="267" src="./assets/img/projects/dj-design-studio/people/jovana-marinkovic.webp" alt="Jovana Marinković Profilna Slika">
+                                    </div>
+
+                                    <div class="content">
+                                        <div class="title">
+                                            <h3>Jovana Marinković</h3>
+                                        </div>
+                                        <div class="position">Suvlasnik</div>
+                                        <div class="project">
+                                            <a href="https://djdesignstudio.co/" target="_blanc">DJ Design Studio</a>
+                                        </div>
+                                        <blockquote>
+                                            „Miloš nam je pravio sajt i sve je prošlo baš glatko. Slušao je naše
+                                            ideje, predlagao pametna rešenja i sve ispoštovao u roku.
+                                            Sajt izgleda moderno, a nama se javlja sve više novih klijenata.“
+                                        </blockquote>
+                                    </div>
+                                </div>
+
+                            </div> <!-- Slider container end -->
+
+                        </div> <!-- Swiper slide end -->
+
+                        <!-- Swiper slide start -->
+                        <div class="swiper-slide">
+
+                            <!-- Slider container start -->
+                            <div class="slider-container">
+
+                                <div class="slider__inner">
+                                    <div class="image">
+                                        <img width="400" height="267" src="./assets/img/no-user.webp" alt="No User">
+                                    </div>
+
+                                    <div class="content">
+                                        <div class="title">
+                                            <h3>Mihaela Djaković</h3>
+                                        </div>
+                                        <div class="position">Vlasnik</div>
+                                        <div class="project">
+                                            <a href="https://office.intimolabwaer.com/" target="_blanc">Intimo Lab Wear</a>
+                                        </div>
+                                        <blockquote>
+                                            „Super iskustvo stvarno. Sajt je ispao mnogo bolje nego što sam
+                                            očekivala, sve je brzo odrađeno i bez komplikacija. Lako smo
+                                            se dogovarali oko svega i na kraju je sve leglo kako treba.“
                                         </blockquote>
                                     </div>
                                 </div>

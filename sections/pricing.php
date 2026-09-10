@@ -9,9 +9,9 @@
 
                     <div class="heading">
                         <div class="title">
-                            <h2>Zanima Vas cenovnik usluga?</h2>
+                            <h2>Cene po meri Vaših potreba.</h2>
                         </div>
-                        <div class="subtitle">Hajde da stupimo u kontakt.</div>
+                        <div class="subtitle">Zanima Vas cenovnik usluga? Hajde da stupimo u kontakt.</div>
                     </div>
 
                     <!-- CTA and text start -->
@@ -19,16 +19,15 @@
 
                         <div class="text">
                             <p>
-                                Cene usluga variraju u skladu sa različitim faktorima
-                                kao što su obim projekta, specifični zahtevi klijenta, tehnički
-                                zahtevi i vreme potrebno za realizaciju. Cilj je pružiti
-                                visokokvalitetne usluge prilagođene Vašim potrebama i budžetu. 
+                                <strong>Projekti već od 150€.</strong>
+                                Svaki sajt je drugačiji, zato cenu određujemo prema Vašim potrebama, obimu i funkcionalnostima.
+                                Bez obzira na <strong>obim projekta</strong> ili <strong>budžet</strong>, možemo napraviti funkcionalano i pouzdano rešenje koji odgovara baš Vama.
+                                Od jednostavnih prezentacionih sajtova do kompleksnijih web rešenja - dobićete jasnu ponudu pre početka rada, bez skrivenih troškova.
                                 <br><br>
-                                Ako tražite pouzdan web sajt, kontaktirajte me i dobićete jasnu i transparentnu ponudu, bez skrivenih troškova.
                                 <strong>Svaka vrsta dogovora je moguća.</strong>
                             </p>
                         </div>
-                        <div class="section-cta">
+                        <div class="section-cta scroll-to-menu-items">
                             <a href="#get-in-touch" class="button button-off--secondary">Saznajte cenu</a>
                         </div>
 

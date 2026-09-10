@@ -75,6 +75,14 @@
                 -webkit-text-fill-color: transparent;
                 background-clip: text;
                 -webkit-background-clip: text;
+
+                a {
+                    text-decoration: none;
+
+                    &:hover {
+                        text-decoration: underline;
+                    }
+                }
             }
         }
     }
