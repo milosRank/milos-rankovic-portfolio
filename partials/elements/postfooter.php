@@ -6,7 +6,7 @@
 
                 <!-- Postfooter inner start -->
                 <div class="postfooter__inner">
-                    <p>© Miloš Ranković, all rights reserved.</p>
+                    <p>© sajtpomeri.com, all rights reserved.</p>
                 </div> <!-- Postfooter inner end -->
 
             </div>

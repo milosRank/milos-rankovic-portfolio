@@ -11,7 +11,7 @@
                         <!-- Logo holder start -->
                         <div class="logo-holder">
                             <div class="logo-holder__inner">
-                                <a href="./" aria-label="Go to homepage of Milos Rankovic Portfolio" style="text-decoration: none;">
+                                <a href="./" aria-label="Go to the homepage" style="text-decoration: none;">
                                     <img src="./assets/img/logos/sajtpomeri-logo.webp" alt="" width="120">
                                 </a>
                             </div>

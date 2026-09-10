@@ -14,7 +14,7 @@
     <!-- FAVICON -->
     <?php include 'partials/resources/favicon.php';?>
 
-    <title>Milos Rankovic Portfolio | UI Kit</title>
+    <title>Sajt Po Meri | UI Kit</title>
 
 </head>
 

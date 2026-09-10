@@ -1,2 +1,2 @@
-# milos-rankovic-portfolio
-Portoflio of Milos Rankovic programmer
+# sajt-po-meri
+Sajt Po Meri

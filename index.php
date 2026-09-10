@@ -15,7 +15,7 @@
         <!-- FAVICON -->
         <?php include 'partials/resources/favicon.php';?>
 
-        <title>Web dizajn Srbija - Izrada sajtova i SEO | Miloš Ranković</title>
+        <title>Vaš Sajt Po Meri</title>
 
     </head>
 
