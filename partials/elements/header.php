@@ -12,7 +12,7 @@
                         <div class="logo-holder">
                             <div class="logo-holder__inner">
                                 <a href="./" aria-label="Go to homepage of Milos Rankovic Portfolio" style="text-decoration: none;">
-                                    <img src="./assets/img/logos/mrcode-logo.webp" alt="" width="120">
+                                    <img src="./assets/img/logos/sajtpomeri-logo.webp" alt="" width="120">
                                 </a>
                             </div>
                         </div> <!-- Logo holder end -->
@@ -35,7 +35,7 @@
                                             <a href="#pricing">Cenovnik</a>
                                         </li>
                                         <li>
-                                            <a href="#get-in-touch">Kontakt</a>
+                                            <a href="#get-in-touch" data-smooth-scroll>Kontakt</a>
                                         </li>
                                     </ul>
                                 </nav>

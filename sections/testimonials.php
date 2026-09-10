@@ -66,21 +66,21 @@
 
                                 <div class="slider__inner">
                                     <div class="image">
-                                        <img width="400" height="267" src="" alt="Mihaela Djaković Profilna Slika">
+                                        <img width="400" height="267" src="./assets/img/projects/dj-design-studio/people/darko-marinkovic.webp" alt="Darko Marinković Profilna Slika">
                                     </div>
 
                                     <div class="content">
                                         <div class="title">
-                                            <h3>Mihaela Djaković</h3>
+                                            <h3>Darko Marinković</h3>
                                         </div>
-                                        <div class="position">Vlasnik</div>
+                                        <div class="position">Suvlasnik</div>
                                         <div class="project">
-                                            <a href="https://office.intimolabwaer.com/" target="_blanc">Intimo Lab Wear</a>
+                                            <a href="https://djdesignstudio.co/" target="_blanc">DJ Design Studio</a>
                                         </div>
                                         <blockquote>
-                                            „Super iskustvo stvarno. Sajt je ispao mnogo bolje nego što sam
-                                            očekivala, sve je brzo odrađeno i bez komplikacija. Lako smo
-                                            se dogovarali oko svega i na kraju je sve leglo kako treba.“
+                                            „U početku smo bili malo skeptični jer nismo znali kako ceo taj proces ide,
+                                            ali Miloš nam je sve objasnio, strpljivo radio sa nama i svaki detalj
+                                            doterao do kraja. Sada imamo sajt na koji smo baš ponosni.“
                                         </blockquote>
                                     </div>
                                 </div>
@@ -128,21 +128,21 @@
 
                                 <div class="slider__inner">
                                     <div class="image">
-                                        <img width="400" height="267" src="./assets/img/projects/dj-design-studio/people/darko-marinkovic.webp" alt="Darko Marinković Profilna Slika">
+                                        <img width="400" height="267" src="./assets/img/no-user.webp" alt="No User">
                                     </div>
 
                                     <div class="content">
                                         <div class="title">
-                                            <h3>Darko Marinković</h3>
+                                            <h3>Mihaela Djaković</h3>
                                         </div>
-                                        <div class="position">Suvlasnik</div>
+                                        <div class="position">Vlasnik</div>
                                         <div class="project">
-                                            <a href="https://djdesignstudio.co/" target="_blanc">DJ Design Studio</a>
+                                            <a href="https://office.intimolabwaer.com/" target="_blanc">Intimo Lab Wear</a>
                                         </div>
                                         <blockquote>
-                                            „U početku smo bili malo skeptični jer nismo znali kako ceo taj proces ide,
-                                            ali Miloš nam je sve objasnio, strpljivo radio sa nama i svaki detalj
-                                            doterao do kraja. Sada imamo sajt na koji smo baš ponosni.“
+                                            „Super iskustvo stvarno. Sajt je ispao mnogo bolje nego što sam
+                                            očekivala, sve je brzo odrađeno i bez komplikacija. Lako smo
+                                            se dogovarali oko svega i na kraju je sve leglo kako treba.“
                                         </blockquote>
                                     </div>
                                 </div>

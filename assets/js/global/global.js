@@ -2,13 +2,13 @@
 
 
 // Global elements
-import { ROOT } from '../utils/dom-elements.js';
+import { ROOT } from "../utils/dom-elements.js";
 
 // Class names
-import { class_screenLocked } from '../utils/dom-class-names.js';
+import { class_screenLocked } from "../utils/dom-class-names.js";
 
 // Global Objects
-import ScreenLocker from '../screen-locker/screen-locker.js';
+import ScreenLocker from "../screen-locker/screen-locker.js";
 
 
 /**
@@ -100,7 +100,7 @@ export function createScrollDirectionTracker() {
  * Checks if given HTML element / CSS selector is valid.
  * If HTML element exists return true.
  * If HTML element that is returned from querying with given CSS selector exists, return true.
- * If selector is invalid or element don't exists, return false
+ * If selector is invalid or element don"t exists, return false
  * 
  * @param {HTMLElement | String} elementOrSelector - HTMLElement or String
  *  
@@ -109,7 +109,7 @@ export function createScrollDirectionTracker() {
 function isElementValid(elementOrSelector) {
 
     // Case when string is passed
-    if (typeof elementOrSelector === 'string') {
+    if (typeof elementOrSelector === "string") {
 
         // Case when there is no element with given CSS selector
         if(document.querySelector(elementOrSelector) == null) {
@@ -128,7 +128,7 @@ function isElementValid(elementOrSelector) {
 
 /**
  * This function returns element, 
- * but if given element is CSS selector than it's querying DOM and returns founded element
+ * but if given element is CSS selector than it"s querying DOM and returns founded element
  * 
  * @param {HTMLElement | String} elementOrSelector - The element or CSS selector to be assigned.
  * 
@@ -149,7 +149,7 @@ export function assignElement(elementOrSelector) {
         }
     }
     else {
-        throw new Error('Invalid input. Expected string or HTMLElement.');
+        throw new Error("Invalid input. Expected string or HTMLElement.");
     }
 
 }
@@ -232,16 +232,26 @@ export const getScrollbarWidth = () => window.innerWidth - document.documentElem
  */
 export const initMenuItemsScrollTo = () => {
 
-    const menuWrapper = document.querySelector(".scroll-to-menu-items");
-    const menuItems = menuWrapper?.querySelectorAll("a");
+    const menuWrappers = document.querySelectorAll(".scroll-to-menu-items");
 
-    menuItems?.forEach(item => {
+    menuWrappers.forEach(menuWrapper => {
 
-        item.addEventListener("click", function(event) {
+        const menuItems = menuWrapper?.querySelectorAll("a");
 
-            event.preventDefault();
-            let targetElement = document.querySelector(`${item.getAttribute("href")}`);
-            if(targetElement) scrollToElement(targetElement);
+        menuItems?.forEach(item => {
+
+            item.addEventListener("click", function(event) {
+
+                event.preventDefault();
+                let targetElement = document.querySelector(`${item.getAttribute("href")}`);
+                if(targetElement) scrollToElement(targetElement);
+
+                if(window.innerWidth <= 500) {
+                    window.header.navigationMenu.toggleNavMenuAsSidebar();
+                    window.header.navigationMenu.toggleActiveSidebarClass();
+                }
+
+            });
 
         });
 

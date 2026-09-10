@@ -30,6 +30,7 @@
                                 <div class="labels-wrapper">
                                     <div class="label service">Kreiranje Dizajna</div>
                                     <div class="label service">Razvoj Vebsajta</div>
+                                    <div class="label service">Održavanje Vebsajta</div>
                                 </div>
 
                                 <div class="title">

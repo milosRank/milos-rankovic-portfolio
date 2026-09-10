@@ -13,7 +13,7 @@
 
                     <div class="text">
                         <p>
-                            Bilo da vam treba kompletan veb sajt, redizajn postojećeg ili SEO optimizacija, ili samo želite da se informišete - obratite mi se.
+                            Bilo da vam treba kompletan veb sajt, redizajn ili održavanje postojećeg, SEO optimizacija, ili samo želite da se informišete - obratite mi se.
                             U što kraćem periodu ću Vam pružiti sve neophodne informacije.
                         </p>
                     </div>

@@ -102,7 +102,7 @@
 
                                     <div class="content">
                                         <p>
-                                            Optimizacija Vaše online prisutnost. Postignite bolje
+                                            Osnovna optimizacija Vaše online prisutnost. Postignite bolje
                                             rangiranje na pretraživačima i privucite više ciljane publike.
                                         </p>
                                     </div>
